@@ -1,13 +1,12 @@
 /* eslint-disable max-len */
 import React from 'react';
-import Logo from '../assets/react.svg';
 
 function Footer() {
   return (
     <footer className="w-full h-max md:mt-20 mb-10 md:mb-0 px-6 md:px-8 py-10 flex flex-col md:flex-row   justify-start items-center border-t border-gray-200">
       {/* logo */}
       <div className="mx-8">
-        <img src={Logo} alt="company logo" width="100px" height="auto" />
+        <img src="/vercel.svg" alt="company logo" width="100px" height="auto" />
       </div>
       {/* information */}
       <aside className="w-full md:ml-8 grid grid-cols-3 grid-rows-2 text-gray-500">
