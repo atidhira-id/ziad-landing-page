@@ -4,6 +4,16 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #1D77FF 0%, #005BE3 100%);
+  border-radius: 10px;
+}
+
 html {
   font-family: 'Poppins', sans-serif;
 }
@@ -24,3 +34,4 @@ h6 {
 .radial-gradient-shadow {
   background: radial-gradient(53.43% 53.43% at 50% 46.57%, rgba(29, 122, 253, 0.15) 0%, rgba(29, 122, 253, 0.1) 40.1%, rgba(29, 122, 253, 0.06) 100%);
 }
+
