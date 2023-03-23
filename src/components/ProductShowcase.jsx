@@ -14,13 +14,13 @@ function ProductShowcase({
       <motion.section
         initial={{ opacity: 0, x: 100 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ delay: 0.4 }}
+        transition={{ delay: 0.4, ease: 'easeInOut' }}
         viewport={{ once: true, margin: '100px' }}
         className="w-full md:w-4/5 h-max px-4 md:px-12 py-12 flex flex-col md:flex-row  jusftify-center items-center gap-8"
       >
         {/* product image */}
         <div>
-          <img src="/phone-image.png" alt="phone-image-apps" height="auto" className="w-[200px] md:w-[400px]" />
+          <img src="./phone-image.png" alt="phone-image-apps" height="auto" className="w-[200px] md:w-[400px]" />
         </div>
         {/* product desc */}
         <article className="w-full md:w-3/4 md:mr-12">
@@ -69,7 +69,7 @@ function ProductShowcase({
       </article>
       {/* product image */}
       <div>
-        <img src="/phone-image.png" alt="phone-image-apps" height="auto" className="w-[200px] md:w-[400px]" />
+        <img src="./phone-image.png" alt="phone-image-apps" height="auto" className="w-[200px] md:w-[400px]" />
       </div>
     </motion.section>
   )

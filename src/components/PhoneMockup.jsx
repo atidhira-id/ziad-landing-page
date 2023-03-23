@@ -1,11 +1,12 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/react-in-jsx-scope */
-function PhoneMockup({ size = '500px', className = '' }) {
+function PhoneMockup({ size, className = '' }) {
   return (
     <div className={`${className === '' ? 'w-max' : className}`}>
       <img
-        src="/phone-mockup.png"
+        src="./phone-mockup.png"
         alt="phone-mockup"
-        width={size}
+        width={size ? '600px' : size}
         height="auto"
       />
     </div>
