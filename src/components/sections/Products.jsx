@@ -37,6 +37,7 @@ function Products() {
           title={(
             <span className="text-brand">Smart Card</span>
           )}
+          imgUrl="./card-mockup.png"
         >
           Alat SmartReader kami ciptakan untuk membaca kartu siswa dan guru untuk absen, pinjam buku, akses masuk tamu, menabung, dll.
         </ProductShowcase>

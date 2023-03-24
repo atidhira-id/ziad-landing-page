@@ -1,7 +1,7 @@
 /* eslint-disable react/self-closing-comp */
 import { motion } from 'framer-motion'
 
-function CardFeatures({ children: desc, title = 'title' }) {
+function CardFeatures({ children: desc, title = 'title', imageUrl }) {
   return (
     <motion.div
       initial={{opacity: 0, y: -50}}
@@ -13,7 +13,8 @@ function CardFeatures({ children: desc, title = 'title' }) {
         {/* title */}
         <h3 className="w-fit mb-3 font-poppins font-bold text-xl text-blue-600 text-center">{title}</h3>
         {/* image */}
-        <div className="w-16 h-16 bg-blue-500 mb-8"></div>
+        {/* <div className="w-16 h-16 bg-blue-500 mb-8"></div> */}
+        <img src={imageUrl} alt="feature-image" width="100px" height="auto" className="mb-5" />
         {/* desc */}
         <div className="grow">
           <p className="w-full text-center text-gray-500">

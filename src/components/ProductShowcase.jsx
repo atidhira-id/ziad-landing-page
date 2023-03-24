@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable no-unused-vars */
 /* eslint-disable jsx-a11y/img-redundant-alt */
@@ -20,7 +21,12 @@ function ProductShowcase({
       >
         {/* product image */}
         <div>
-          <img src="./phone-image.png" alt="phone-image-apps" height="auto" className="w-[200px] md:w-[400px]" />
+          <img
+            src={imgUrl || './phone-image.png'}
+            alt="phone-image-apps"
+            height="auto"
+            className="w-[200px] md:w-[400px]"
+          />
         </div>
         {/* product desc */}
         <article className="w-full md:w-3/4 md:mr-12">
@@ -69,7 +75,12 @@ function ProductShowcase({
       </article>
       {/* product image */}
       <div>
-        <img src="./phone-image.png" alt="phone-image-apps" height="auto" className="w-[200px] md:w-[400px]" />
+        <img
+          src={imgUrl || './phone-image.png'}
+          alt="phone-image-apps"
+          height="auto"
+          className="w-[200px] md:w-[400px]"
+        />
       </div>
     </motion.section>
   )
