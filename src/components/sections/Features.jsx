@@ -5,7 +5,7 @@ import { SectionTitle } from '../Typography';
 
 function Features() {
   return (
-    <section className="relative w-full min-h-[120vh] h-max mb-64">
+    <section className="relative w-full min-h-[120vh] h-max mb-64" id="features">
       {/* title */}
       <div className="mb-10">
         <SectionTitle>Features</SectionTitle>

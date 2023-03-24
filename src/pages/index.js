@@ -8,10 +8,21 @@ import Products from '@/components/sections/Products';
 import DownloadDemo from '@/components/sections/DownloadDemo';
 import Footer from '@/components/Footer';
 import Pricing from '@/components/sections/Pricing';
+// import luxy from 'luxy.js';
 
 export default function Home() {
+  // const init = () => {
+  //   luxy.init()
+
+  //   luxy.settings.wrapperSpeed = 0.02
+  // }
+
+  // useEffect(() => {
+  //   init()
+  // }, [])
+
   return (
-    <main>
+    <main id="luxy" className="overflow-x-hidden max-w-scren">
       <Navbar />
       <Jumbotron />
       <Clients />
@@ -25,7 +36,7 @@ export default function Home() {
   )
 }
 
-export async function getStaticProps(){
+export async function getStaticProps() {
   return {
     props: {},
   }

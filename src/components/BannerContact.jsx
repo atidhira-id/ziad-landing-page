@@ -4,7 +4,7 @@ import Button from './Button';
 
 function BannerContact() {
   return (
-    <section className="linear-primary w-4/5 min-h-72 h-max px-4 py-8 md:py-12 mx-auto mb-12 mt-8 text-center flex flex-col md:flex-row items-center justify-center text-white rounded-lg shadow-lg">
+    <section className="linear-primary w-4/5 min-h-72 h-max px-4 py-8 md:py-12 mx-auto mb-12 mt-8 text-center flex flex-col md:flex-row items-center justify-center text-white rounded-lg shadow-lg" id="contact">
       <article className="mb-8 md:mb-0">
         <h3 className="w-4/5 mb-4 md:mb-8 m-auto font-poppins font-bold text-lg md:text-xl text-center md:text-left">
           ZIAD Smart Education System menggunakan teknologi kekinian.

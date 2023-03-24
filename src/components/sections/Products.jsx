@@ -7,7 +7,7 @@ import { SectionTitle } from '../Typography';
 
 function Products() {
   return (
-    <section className="w-full max-h-max mb-20">
+    <section className="w-full max-h-max mb-20" id="product">
       {/* title */}
       <SectionTitle>Products</SectionTitle>
       {/* banner */}
