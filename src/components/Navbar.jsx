@@ -36,7 +36,7 @@ function Navbar() {
       </nav>
       {/* hamburger icon */}
       <AnimatePresence>
-        <div className="md:hidden sticky w-full bg-brand flex justify-center items-center py-2 px-3">
+        <div className="md:hidden absolute right-4 top-4 w-full bg-brand flex justify-center items-center py-2 px-3">
           <button type="button" className="md:hidden" onClick={togglePhoneMenu}>
             <HamburgerIcon />
           </button>

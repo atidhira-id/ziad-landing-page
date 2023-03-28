@@ -23,7 +23,7 @@ function CardPricing({
           </span>
           {/* price */}
           <h1 className="text-4xl font-bold font-poppins text-white mb-3">
-            {`Rp${price}`}
+            {`Rp${price}K`}
           </h1>
           {/* add on desc */}
           <span className="w-3/4 font-light text-xs text-center text-gray-200 opacity-75">
@@ -60,7 +60,7 @@ function CardPricing({
         </span>
         {/* price */}
         <h1 className="text-4xl font-bold font-poppins text-brand mb-3">
-          {`Rp${price}`}
+          {`Rp${price}K`}
         </h1>
         {/* add on desc */}
         <span className="w-3/4 font-light text-xs text-center text-gray-600 opacity-75">

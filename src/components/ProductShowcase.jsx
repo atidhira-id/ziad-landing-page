@@ -17,7 +17,7 @@ function ProductShowcase({
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.4, ease: 'easeInOut' }}
         viewport={{ margin: '100px' }}
-        className="w-full md:w-4/5 h-max px-4 md:px-12 py-12 flex flex-col md:flex-row  jusftify-center items-center gap-8"
+        className="w-full md:w-4/5 h-max px-4 md:px-12 py-6 flex flex-col md:flex-row  jusftify-center items-center gap-8"
       >
         {/* product image */}
         <div>
@@ -55,7 +55,7 @@ function ProductShowcase({
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ delay: 0.4 }}
       viewport={{ margin: '100px' }}
-      className="w-full md:w-4/5 h-max px-4 md:px-12 py-12 flex flex-col-reverse md:flex-row justify-center items-center gap-8 "
+      className="w-full md:w-4/5 h-max px-4 md:px-12 py-6 flex flex-col-reverse md:flex-row justify-center items-center gap-8 "
     >
       {/* product desc */}
       <article className="w-full md:w-3/4 md:mr-12">

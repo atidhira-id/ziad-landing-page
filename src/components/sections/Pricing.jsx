@@ -11,16 +11,6 @@ function Pricing() {
       </div>
       <section className="w-full max-h-max mb-40 flex flex-col md:flex-row items-center justify-center gap-10">
         <CardPricing
-          name="Smart Reader"
-          price="350.000"
-          desc={[
-            'Bayar Sekali',
-            'Garansi Selamanya',
-            'Satu alat bisa banyak fungsi',
-            'Tidak ada minimal pembelian',
-          ]}
-        />
-        <CardPricing
           name="Bulanan"
           shortDesc="Khusus untuk anak Yatim dan Duafa"
           price="0"
@@ -35,8 +25,33 @@ function Pricing() {
           ]}
         />
         <CardPricing
+          name="Bulanan"
+          shortDesc="Khusus untuk anak Yatim dan Duafa"
+          price="10"
+          desc={[
+            'Dapat semua fitur',
+            'Bebas biaya registrasi',
+            'Bebas biaya pemasangan',
+            'Gratis penyesuaian kebutuhan',
+            'Gratis fitur Baru',
+            'Harga dapat didiskusikan',
+          ]}
+        />
+      </section>
+      <section className="w-full max-h-max mb-40 flex flex-col md:flex-row items-center justify-center gap-10">
+        <CardPricing
+          name="Smart Reader"
+          price="350"
+          desc={[
+            'Bayar Sekali',
+            'Garansi Selamanya',
+            'Satu alat bisa banyak fungsi',
+            'Tidak ada minimal pembelian',
+          ]}
+        />
+        <CardPricing
           name="Smart Card"
-          price="10.000"
+          price="10"
           desc={[
             'Bayar Sekali',
             'Full print dua sisi',

@@ -9,35 +9,27 @@ function Footer() {
         <img src="./vercel.svg" alt="company logo" width="100px" height="auto" />
       </div>
       {/* information */}
-      <aside className="w-full md:ml-8 flex flex-col md:grid md:grid-cols-3 md:grid-rows-2 text-gray-500">
+      <aside className="w-full md:ml-8 flex flex-col md:flex-row justify-center items-start text-gray-500">
         {/* contact info */}
-        <div className="hidden md:block col-start-1 row-start-1 col-end-1">
+        <div className="mr-14">
           <h3 className="font-poppins font-semibold text-gray-800">Contact</h3>
-        </div>
-        <div className="col-start-1 md:col-start-2 col-end-2 row-start-1">
           <h3 className="font-poppins font-medium text-gray-800">Phone</h3>
           <p>
             0877-7666-9010 (Tulus)
             <br />
             0812-1105-5682 (Alka)
-          </p>
-        </div>
-        <div className="col-start-3 col-end-3 row-start-1">
-          <h3 className="font-poppins font-medium text-gray-800">Email</h3>
-          <p>
+            <br />
             ptmitracerdasnusantara@gmail.com
           </p>
         </div>
-        <div className="hidden md:block col-start-1 col-end-1 row-start-2">
+        <div className="max-w-1/2">
           <h3 className="font-poppins font-semibold text-gray-800">Address</h3>
-        </div>
-        <div className="col-start-1 md:col-start-2 col-end-2 row-start-2">
           <p>
             Jl. KH. Abdullah Syafei No. 1 (Tebet Utara Dalam 34) Rt 05/ Rw 01, Tebet - Jakarta Selatan 12820
           </p>
         </div>
       </aside>
-    </footer>
+    </footer >
   )
 }
 

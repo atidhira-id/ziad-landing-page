@@ -9,7 +9,7 @@ function AboutUsQuotes() {
         <h3 className="font-poppins font-bold text-xl md:text-2xl">
           Membantu pesantren dan sekolah islam
           <span className="text-blue-600">
-            Memanfaatkan Teknologi
+            {' '}Memanfaatkan Teknologi
           </span>
         </h3>
       </div>

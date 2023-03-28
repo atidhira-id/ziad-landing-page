@@ -5,10 +5,10 @@ import { SectionTitle } from '../Typography';
 
 function Features() {
   return (
-    <section className="relative w-full min-h-[120vh] h-max mb-64" id="features">
+    <section className="relative w-full min-h-[100vh] h-max mb-44" id="features">
       {/* title */}
       <div className="mb-10">
-        <SectionTitle>Features</SectionTitle>
+        <SectionTitle>Fitur Unggulan</SectionTitle>
       </div>
       <section className="w-full h-max z-20 ">
         {/* row 1 */}

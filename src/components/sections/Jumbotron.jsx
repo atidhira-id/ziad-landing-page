@@ -9,32 +9,32 @@ function Jumbotron() {
   return (
     <>
       {/* outer container */}
-      <section className="w-full h-max mb-64 flex flex-col" id="home">
+      <section className="w-full h-max mb-44 flex flex-col" id="home">
         {/* title and desc */}
         <section
-          className="linear-primary w-full h-screen flex flex-col items-center justify-center md:justify-start text-white text-center"
+          className="linear-primary w-full h-screen flex flex-col items-center justify-start text-white text-center"
         >
           <motion.h1
             initial={{ opacity: 0, y: '-10' }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ ease: 'easeInOut' }}
-            className="text-5xl md:text-6xl font-extrabold mb-8 mt-12 md:mt-36 px-3 md:px-4"
+            className="text-2xl md:text-5xl font-extrabold px-3 md:px-4 mt-4 md:mt-28 md:py-12"
           >
-            Ziad Smart Edu
+            ZIAD
             <br />
-            Application
+            Smart Education System
           </motion.h1>
           <motion.span
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ ease: 'easeInOut' }}
-            className="text-sm md:text-md font-light w-full md:w-3/4 px-4 md:px-8"
+            className="text-md md:text-md w-full md:w-3/4 px-4 md:px-8 md:mb-8"
           >
             Solusi cerdas memanfaatkan teknologi terkini untuk mengelola pesantren dan sekolah islam
           </motion.span>
         </section>
         {/* apps screenshots */}
-        <section className="relative w-full h-[55vh] md:min-h-[75vh] max-h-max flex flex-col justify-end items-center p-12">
+        <section className="relative w-full h-[55vh] md:min-h-[75vh] max-h-max flex flex-col justify-end items-center p-12 mt-12">
           {/* screenshots */}
           <motion.div
             initial={{ opacity: 0 }}
@@ -45,11 +45,6 @@ function Jumbotron() {
             <PhoneMockup className="w-3/4 md:w-max" />
             <PhoneMockup className="hidden md:block" size="500px" />
           </motion.div>
-          {/* download links */}
-          <div className="w-full flex gap-8 justify-center">
-            <DownloadLink />
-            <DownloadLink />
-          </div>
         </section>
       </section>
 

@@ -26,8 +26,8 @@ export default function Home() {
       <Navbar />
       <Jumbotron />
       <Clients />
-      <AboutUsQuotes />
       <Features />
+      <AboutUsQuotes />
       <Products />
       <DownloadDemo />
       <Pricing />

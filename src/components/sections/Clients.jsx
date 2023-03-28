@@ -6,7 +6,7 @@ function Clients() {
   return (
     <section className="relative w-full min-h-screen h-max md:h-[90vh] mb-20">
       {/* title */}
-      <SectionTitle>Our Clients</SectionTitle>
+      <SectionTitle>Pesantren yang Sudah Terbantu</SectionTitle>
       {/* clients card */}
       <section className="w-full h-full max-h-max flex flex-col justify-center items-center md:h-2/3 gap-8 md:px-24 z-20">
         {/* row 1 */}

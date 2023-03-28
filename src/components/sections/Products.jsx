@@ -10,14 +10,12 @@ function Products() {
     <section className="w-full max-h-max mb-20" id="product">
       {/* title */}
       <SectionTitle>Products</SectionTitle>
-      {/* banner */}
-      <BannerProduct />
       {/* product showcase */}
       <section className="w-full flex flex-col justify-center items-center">
         <ProductShowcase
           title={(
             <>
-              <span className="text-brand">Aplikas{' '}</span> Web
+              <span className="text-brand">Dashboard{' '}</span> Admin
             </>
           )}
         >
@@ -35,7 +33,12 @@ function Products() {
         </ProductShowcase>
         <ProductShowcase
           title={(
-            <span className="text-brand">Smart Card</span>
+            <span>
+              <span className="text-brand">
+                Smart Card
+              </span>
+              {' '}Cashless
+            </span>
           )}
           imgUrl="./card-mockup.png"
         >
