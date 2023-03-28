@@ -9,18 +9,9 @@ function Products() {
   return (
     <section className="w-full max-h-max mb-20" id="product">
       {/* title */}
-      <SectionTitle>Products</SectionTitle>
+      <SectionTitle>Teknologi Unggulan</SectionTitle>
       {/* product showcase */}
       <section className="w-full flex flex-col justify-center items-center">
-        <ProductShowcase
-          title={(
-            <>
-              <span className="text-brand">Dashboard{' '}</span> Admin
-            </>
-          )}
-        >
-          Aplikasi website yang mudah diakses untuk membantu setiap kegiatan dan administrasi guru atau karyawan.
-        </ProductShowcase>
         <ProductShowcase
           title={(
             <>
@@ -30,6 +21,15 @@ function Products() {
           align="left"
         >
           Aplikasi android dan IOS khusus untuk setiap sekolah agar memudahkan komunikasi dan berbagi data terkini kepada wali murid sesuai kebutuhan.
+        </ProductShowcase>
+        <ProductShowcase
+          title={(
+            <>
+              <span className="text-brand">Dashboard{' '}</span> Admin
+            </>
+          )}
+        >
+          Aplikasi website yang mudah diakses untuk membantu setiap kegiatan dan administrasi guru atau karyawan.
         </ProductShowcase>
         <ProductShowcase
           title={(
