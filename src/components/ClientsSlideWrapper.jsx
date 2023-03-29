@@ -9,7 +9,7 @@ function ClientsSlideWrapper({ clients }) {
         {clients && clients.map((client, i) => {
           if (i <= 1) {
             return (
-              <CardClients key={client.name}>{client.name}</CardClients>
+              <CardClients key={client.name} imgUrl={client.logo}>{client.name}</CardClients>
             )
           }
         })}
@@ -18,7 +18,7 @@ function ClientsSlideWrapper({ clients }) {
         {clients && clients.map((client, i) => {
           if (i >= 2) {
             return (
-              <CardClients key={client.name}>{client.name}</CardClients>
+              <CardClients key={client.name} imgUrl={client.logo}>{client.name}</CardClients>
             )
           }
         })}
