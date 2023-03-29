@@ -1,28 +1,87 @@
-import React from 'react';
+import { useRef, useEffect } from 'react';
 import CardClients from '../CardClients';
 import { SectionTitle } from '../Typography';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar } from 'swiper';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import ClientsSlideWrapper from '../ClientsSlideWrapper';
 
 function Clients() {
+  const clients = [
+    {
+      name: "Mthq",
+      logo: "./client-logo-one.png"
+    },
+    {
+      name: "Al Muhajirin",
+      logo: "./client-logo-one.png"
+    },
+    {
+      name: "Ponpes Modern",
+      logo: "./client-logo-one.png"
+    },
+    {
+      name: "Tiara Aksara",
+      logo: "./client-logo-one.png"
+    },
+    {
+      name: "Daarel Qurro",
+      logo: "./client-logo-one.png"
+    },
+    {
+      name: "Daarul Hikmah",
+      logo: "./client-logo-one.png"
+    },
+    {
+      name: "Daarul Hikmah 1",
+      logo: "./client-logo-one.png"
+    },
+    {
+      name: "Daarul Hikmah 2",
+      logo: "./client-logo-one.png"
+    },
+    {
+      name: "Daarul Hikmah 4",
+      logo: "./client-logo-one.png"
+    }, 
+  ]
+
   return (
     <section className="relative w-full min-h-screen h-max md:h-[90vh] mb-20">
       {/* title */}
-      <SectionTitle>Pesantren yang Sudah Terbantu</SectionTitle>
+      <SectionTitle>Sudah membantu 30+ Pesantren di Indonesia</SectionTitle>
       {/* clients card */}
       <section className="w-full h-full max-h-max flex flex-col justify-center items-center md:h-2/3 gap-8 md:px-24 z-20">
         {/* row 1 */}
-        <div className="flex flex-col md:flex-row gap-8">
-          <CardClients>Mthq</CardClients>
-          <CardClients>Daarul Qurro</CardClients>
-          <CardClients>Daarul Hikmah</CardClients>
-          <CardClients>Al Muhajirin</CardClients>
-        </div>
-        {/* row 2 */}
-        <div className="flex flex-col md:flex-row gap-8">
-          <CardClients>Tiara Aksara</CardClients>
-          <CardClients>Ayyusufiah</CardClients>
-          <CardClients>Ponpes Ziad</CardClients>
-          <CardClients>Ponpes Ziad</CardClients>
-        </div>
+        <Swiper
+          modules={[Navigation, Pagination, Scrollbar]}
+          scrollbar={{ draggable: true }}
+          spaceBetween={100}
+          slidesPerView={1}
+          navigation
+          pagination={{ clickable: true }}
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            width: '80vw',
+            maxWidth: '100vw',
+          }}
+        >
+          <SwiperSlide >
+            <ClientsSlideWrapper clients={[
+              clients[0], clients[1], clients[3], clients[4],
+            ]} />
+          </SwiperSlide>
+          <SwiperSlide >
+            <ClientsSlideWrapper clients={[
+              clients[5], clients[6], clients[7], clients[8],
+            ]} />
+          </SwiperSlide>
+        </Swiper>
         {/* shadow */}
       </section>
       <div className="absolute w-full top-0 bottom-0 flex items-center justify-center">
