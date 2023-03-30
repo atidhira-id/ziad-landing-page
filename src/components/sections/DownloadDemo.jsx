@@ -1,5 +1,6 @@
 /* eslint-disable max-len */
 /* eslint-disable jsx-a11y/img-redundant-alt */
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import DownloadLink from '../DownloadLink';
 
@@ -25,8 +26,8 @@ function DownloadDemo() {
           <DownloadLink />
         </div>
       </article>
-      {/* product image */}
-      <div className="">
+      {/* product image on desktop */}
+      <div className="hidden md:block">
         <img src="./phone-image.png" alt="phone-image-apps" height="auto" className="w-[200px] md:w-[400px]" />
       </div>
     </section>

@@ -14,7 +14,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className="sticky top-0 hidden md:flex linear-secondary md:w-full md:px-6 py-5 items-center jusitfy-end z-40">
+      <nav className="hidden md:flex linear-secondary md:w-full md:px-6 py-5 items-center jusitfy-end z-40">
         {/* logo */}
         <div className="md:block md:grow">
           <h1 className="font-open-sans font-bold text-xl text-white">ZIAD</h1>
@@ -36,7 +36,7 @@ function Navbar() {
       </nav>
       {/* hamburger icon */}
       <AnimatePresence>
-        <div className="md:hidden absolute right-4 top-4 w-full bg-brand flex justify-center items-center py-2 px-3">
+        <div className="md:hidden fixed top-0 w-full bg-brand flex justify-center items-center py-2 px-3 z-40">
           <button type="button" className="md:hidden" onClick={togglePhoneMenu}>
             <HamburgerIcon />
           </button>

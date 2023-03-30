@@ -2,7 +2,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar } from 'swiper';
-import CardFeatures from '../CardFeatures';
 import { SectionTitle } from '../Typography';
 import FeatureSlideWrapper from '../FeatureSlideSwapper';
 
@@ -79,7 +78,7 @@ function Features() {
             <SwiperSlide>
               <FeatureSlideWrapper features={
                 [
-                  features[0], features[1], features[2],
+                  features[0], features[1],
                 ]
               }
               />
@@ -87,7 +86,7 @@ function Features() {
             <SwiperSlide>
               <FeatureSlideWrapper features={
                 [
-                  features[3], features[4], features[5],
+                  features[2], features[3],
                 ]
               }
               />

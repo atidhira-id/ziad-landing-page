@@ -3,7 +3,6 @@
 /* eslint-disable max-len */
 import { motion } from 'framer-motion';
 import PhoneMockup from '../PhoneMockup';
-import DownloadLink from '../DownloadLink';
 
 function Jumbotron() {
   return (

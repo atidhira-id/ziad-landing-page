@@ -1,7 +1,5 @@
-import { useRef, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar } from 'swiper';
-import CardClients from '../CardClients';
 import { SectionTitle } from '../Typography';
 import ClientsSlideWrapper from '../ClientsSlideWrapper';
 
@@ -54,7 +52,7 @@ function Clients() {
       {/* title */}
       <SectionTitle>Sudah membantu 30+ Pesantren di Indonesia</SectionTitle>
       {/* clients card */}
-      <section className="w-full h-full max-h-max flex flex-col justify-center items-center md:h-2/3 gap-8 md:px-24 z-20">
+      <section className="w-full h-full max-h-max mt:6 md:mt-12 flex flex-col justify-center items-center md:h-2/3 gap-8 md:px-24 z-20">
         {/* row 1 */}
         <Swiper
           modules={[Navigation, Pagination, Scrollbar]}
