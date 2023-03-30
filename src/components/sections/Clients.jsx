@@ -3,11 +3,11 @@ import CardClients from '../CardClients';
 import { SectionTitle } from '../Typography';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar } from 'swiper';
+import ClientsSlideWrapper from '../ClientsSlideWrapper';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import ClientsSlideWrapper from '../ClientsSlideWrapper';
 
 function Clients() {
   const clients = [
