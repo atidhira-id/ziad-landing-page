@@ -8,6 +8,7 @@ import Products from '@/components/sections/Products';
 import DownloadDemo from '@/components/sections/DownloadDemo';
 import Footer from '@/components/Footer';
 import Pricing from '@/components/sections/Pricing';
+import FloatingContactButton from '@/components/FloatingContactButton';
 // import luxy from 'luxy.js';
 
 export default function Home() {
@@ -32,6 +33,7 @@ export default function Home() {
       <DownloadDemo />
       <Pricing />
       <Footer />
+      <FloatingContactButton />
     </main>
   )
 }
