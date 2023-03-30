@@ -10,7 +10,7 @@ function PhoneMockup({ size, className = '' }) {
         height="auto"
       />
     </div>
-  )
+  );
 }
 
 export default PhoneMockup;

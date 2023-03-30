@@ -1,58 +1,58 @@
 /* eslint-disable max-len */
 import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar } from 'swiper';
 import CardFeatures from '../CardFeatures';
 import { SectionTitle } from '../Typography';
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation, Pagination, Scrollbar } from 'swiper'
 import FeatureSlideWrapper from '../FeatureSlideSwapper';
 
-import 'swiper/css'
+import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 function Features() {
   const features = [
     {
-      title: "Otomasi pembayaran",
-      imageUrl: "./payment-icon.png",
-      desc: "memudahkan penerimaan pembayaran dan memudahkan wali santri membayar tagihan",
+      title: 'Otomasi pembayaran',
+      imageUrl: './payment-icon.png',
+      desc: 'memudahkan penerimaan pembayaran dan memudahkan wali santri membayar tagihan',
     },
     {
-      title: "Otomasi Pembayaran",
-      imageUrl: "./payment-icon.png",
-      desc: "memudahkan penerimaan pembayaran dan memudahkan wali santri membayar tagihan",
+      title: 'Otomasi Pembayaran',
+      imageUrl: './payment-icon.png',
+      desc: 'memudahkan penerimaan pembayaran dan memudahkan wali santri membayar tagihan',
     },
     {
-      title: "Absensi Terintegrasi",
-      imageUrl: "./file-icon.png",
-      desc: "memudahkan memantau keaktifan guru dan santri",
+      title: 'Absensi Terintegrasi',
+      imageUrl: './file-icon.png',
+      desc: 'memudahkan memantau keaktifan guru dan santri',
     },
     {
-      title: "Keuangan",
-      imageUrl: "./money-icon.png",
-      desc: "mengelola keuangan agar data rapi dan mengurangi kesalahan pencatatan",
+      title: 'Keuangan',
+      imageUrl: './money-icon.png',
+      desc: 'mengelola keuangan agar data rapi dan mengurangi kesalahan pencatatan',
     },
     {
-      title: "Administrasi",
-      imageUrl: "./file-icon.png",
-      desc: "mengelola seluruh data agar mudah diakses dan dibagikan",
+      title: 'Administrasi',
+      imageUrl: './file-icon.png',
+      desc: 'mengelola seluruh data agar mudah diakses dan dibagikan',
     },
     {
-      title: "Administrasi",
-      imageUrl: "./file-icon.png",
-      desc: "mengelola seluruh data agar mudah diakses dan dibagikan",
+      title: 'Administrasi',
+      imageUrl: './file-icon.png',
+      desc: 'mengelola seluruh data agar mudah diakses dan dibagikan',
     },
     {
-      title: "Administrasi",
-      imageUrl: "./file-icon.png",
-      desc: "mengelola seluruh data agar mudah diakses dan dibagikan",
+      title: 'Administrasi',
+      imageUrl: './file-icon.png',
+      desc: 'mengelola seluruh data agar mudah diakses dan dibagikan',
     },
     {
-      title: "Administrasi",
-      imageUrl: "./file-icon.png",
-      desc: "mengelola seluruh data agar mudah diakses dan dibagikan",
+      title: 'Administrasi',
+      imageUrl: './file-icon.png',
+      desc: 'mengelola seluruh data agar mudah diakses dan dibagikan',
     },
-  ]
+  ];
   return (
     <section className="relative w-full min-h-[100vh] h-max mb-44" id="features">
       {/* title */}
@@ -79,16 +79,18 @@ function Features() {
             <SwiperSlide>
               <FeatureSlideWrapper features={
                 [
-                  features[0], features[1], features[2]
+                  features[0], features[1], features[2],
                 ]
-              } />
+              }
+              />
             </SwiperSlide>
             <SwiperSlide>
               <FeatureSlideWrapper features={
                 [
-                  features[3], features[4], features[5]
+                  features[3], features[4], features[5],
                 ]
-              } />
+              }
+              />
             </SwiperSlide>
           </Swiper>
         </div>
@@ -97,7 +99,7 @@ function Features() {
         </div>
       </section>
     </section>
-  )
+  );
 }
 
 export default Features;

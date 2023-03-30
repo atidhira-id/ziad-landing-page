@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-import React from 'react'
+import React from 'react';
 import Button from './Button';
 
 function BannerContact() {
@@ -21,7 +21,7 @@ function BannerContact() {
         </Button>
       </div>
     </section>
-  )
+  );
 }
 
 export default BannerContact;

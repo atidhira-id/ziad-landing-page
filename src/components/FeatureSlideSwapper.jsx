@@ -1,5 +1,5 @@
-import React from 'react'
-import CardFeatures from './CardFeatures'
+import React from 'react';
+import CardFeatures from './CardFeatures';
 
 function FeatureSlideWrapper({ features }) {
   return (
@@ -10,7 +10,7 @@ function FeatureSlideWrapper({ features }) {
         </CardFeatures>
       ))}
     </div>
-  )
+  );
 }
 
-export default FeatureSlideWrapper
+export default FeatureSlideWrapper;

@@ -29,8 +29,8 @@ function Footer() {
           </p>
         </div>
       </aside>
-    </footer >
-  )
+    </footer>
+  );
 }
 
 export default Footer;

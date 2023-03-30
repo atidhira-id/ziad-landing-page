@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import React from 'react'
+import React from 'react';
 import { motion } from 'framer-motion';
 
 function Title({ children: title = 'xl', size: className, align = 'text-center' }) {

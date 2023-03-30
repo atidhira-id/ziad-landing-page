@@ -1,12 +1,12 @@
 /* eslint-disable react/jsx-no-useless-fragment */
-import React from 'react'
+import React from 'react';
 
 function CheckIcon({ size = 36, color = 'white' }) {
   return (
     <svg width={size.toString()} height={size.toString()} viewBox="0 0 36 27" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M11.2761 19.4634L29.763 0.976426C30.3375 0.401972 31.0686 0.114746 31.9564 0.114746C32.8442 0.114746 33.5753 0.401972 34.1498 0.976426C34.7242 1.55088 35.0115 2.282 35.0115 3.16979C35.0115 4.05759 34.7242 4.78871 34.1498 5.36317L13.4694 26.0435C12.8428 26.6702 12.1116 26.9835 11.2761 26.9835C10.4405 26.9835 9.70938 26.6702 9.0827 26.0435L0.935898 17.8967C0.361445 17.3223 0.0742188 16.5911 0.0742188 15.7033C0.0742188 14.8155 0.361445 14.0844 0.935898 13.51C1.51035 12.9355 2.24148 12.6483 3.12927 12.6483C4.01706 12.6483 4.74819 12.9355 5.32264 13.51L11.2761 19.4634Z" fill={color} />
     </svg>
-  )
+  );
 }
 
 function HamburgerIcon({ size = 36, color = 'white' }) {
@@ -22,7 +22,7 @@ function HamburgerIcon({ size = 36, color = 'white' }) {
         </g>
       </svg>
     </>
-  )
+  );
 }
 
 function CloseIcon({ size = 36, color = 'white' }) {
@@ -42,6 +42,6 @@ function CloseIcon({ size = 36, color = 'white' }) {
         {' '}
       </g>
     </svg>
-  )
+  );
 }
 export { CheckIcon, HamburgerIcon, CloseIcon };

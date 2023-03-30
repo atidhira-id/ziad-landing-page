@@ -2,9 +2,9 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable no-unused-vars */
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import React from 'react'
-import { motion } from 'framer-motion'
-import { Title } from './Typography'
+import React from 'react';
+import { motion } from 'framer-motion';
+import { Title } from './Typography';
 
 function ProductShowcase({
   children: desc, title, imgUrl, align,
@@ -45,7 +45,7 @@ function ProductShowcase({
           </p>
         </article>
       </motion.section>
-    )
+    );
   }
 
   return (
@@ -83,7 +83,7 @@ function ProductShowcase({
         />
       </div>
     </motion.section>
-  )
+  );
 }
 
 export default ProductShowcase;

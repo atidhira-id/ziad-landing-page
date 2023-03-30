@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import BannerContact from '../BannerContact';
 import CardPricing from '../CardPricing';
 import { SectionTitle } from '../Typography';
@@ -62,7 +62,7 @@ function Pricing() {
       </section>
       <BannerContact />
     </section>
-  )
+  );
 }
 
 export default Pricing;

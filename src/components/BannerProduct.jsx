@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-import React from 'react'
+import React from 'react';
 import { motion } from 'framer-motion';
 
 function BannerProduct() {
@@ -35,7 +35,7 @@ function BannerProduct() {
         </p>
       </div>
     </motion.article>
-  )
+  );
 }
 
 export default BannerProduct;

@@ -1,7 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import React from 'react'
-import { motion } from 'framer-motion'
-import Button from './Button'
+import React from 'react';
+import { motion } from 'framer-motion';
+import Button from './Button';
 import { CheckIcon } from './Icons';
 
 function CardPricing({
@@ -42,7 +42,7 @@ function CardPricing({
         </ul>
         <Button variant="fill" color="white">Langganan</Button>
       </motion.div>
-    )
+    );
   }
 
   return (
@@ -79,7 +79,7 @@ function CardPricing({
       </ul>
       <Button variant="fill" color="blue">Langganan</Button>
     </motion.div>
-  )
+  );
 }
 
 export default CardPricing;

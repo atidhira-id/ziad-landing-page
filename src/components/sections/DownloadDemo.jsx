@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import React from 'react'
+import React from 'react';
 import DownloadLink from '../DownloadLink';
 
 function DownloadDemo() {
@@ -30,7 +30,7 @@ function DownloadDemo() {
         <img src="./phone-image.png" alt="phone-image-apps" height="auto" className="w-[200px] md:w-[400px]" />
       </div>
     </section>
-  )
+  );
 }
 
 export default DownloadDemo;

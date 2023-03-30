@@ -10,7 +10,7 @@ const variants = {
     blue: 'bg-blue-500 text-white',
     white: 'bg-white text-blue-500',
   },
-}
+};
 
 function buttonVariants(variant, color) {
   const buttonStyle = [];
@@ -26,7 +26,7 @@ function buttonVariants(variant, color) {
     }
   });
 
-  return buttonStyle.join(' ')
+  return buttonStyle.join(' ');
 }
 
 function Button({ children: text = 'text', variant = 'fill', color = 'blue' }) {
@@ -39,7 +39,7 @@ function Button({ children: text = 'text', variant = 'fill', color = 'blue' }) {
         {text}
       </button>
     </div>
-  )
+  );
 }
 
 export default Button;

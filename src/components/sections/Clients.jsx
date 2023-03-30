@@ -1,8 +1,8 @@
 import { useRef, useEffect } from 'react';
-import CardClients from '../CardClients';
-import { SectionTitle } from '../Typography';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar } from 'swiper';
+import CardClients from '../CardClients';
+import { SectionTitle } from '../Typography';
 import ClientsSlideWrapper from '../ClientsSlideWrapper';
 
 import 'swiper/css';
@@ -12,42 +12,42 @@ import 'swiper/css/pagination';
 function Clients() {
   const clients = [
     {
-      name: "Mthq",
-      logo: "./client-logo-one.png"
+      name: 'Mthq',
+      logo: './client-logo-one.png',
     },
     {
-      name: "Al Muhajirin",
-      logo: "./client-logo-one.png"
+      name: 'Al Muhajirin',
+      logo: './client-logo-one.png',
     },
     {
-      name: "Ponpes Modern",
-      logo: "./client-logo-one.png"
+      name: 'Ponpes Modern',
+      logo: './client-logo-one.png',
     },
     {
-      name: "Tiara Aksara",
-      logo: "./client-logo-one.png"
+      name: 'Tiara Aksara',
+      logo: './client-logo-one.png',
     },
     {
-      name: "Daarel Qurro",
-      logo: "./client-logo-one.png"
+      name: 'Daarel Qurro',
+      logo: './client-logo-one.png',
     },
     {
-      name: "Daarul Hikmah",
-      logo: "./client-logo-one.png"
+      name: 'Daarul Hikmah',
+      logo: './client-logo-one.png',
     },
     {
-      name: "Daarul Hikmah 1",
-      logo: "./client-logo-one.png"
+      name: 'Daarul Hikmah 1',
+      logo: './client-logo-one.png',
     },
     {
-      name: "Daarul Hikmah 2",
-      logo: "./client-logo-one.png"
+      name: 'Daarul Hikmah 2',
+      logo: './client-logo-one.png',
     },
     {
-      name: "Daarul Hikmah 4",
-      logo: "./client-logo-one.png"
-    }, 
-  ]
+      name: 'Daarul Hikmah 4',
+      logo: './client-logo-one.png',
+    },
+  ];
 
   return (
     <section className="relative w-full min-h-screen h-max md:h-[90vh] mb-20">
@@ -71,15 +71,17 @@ function Clients() {
             maxWidth: '100vw',
           }}
         >
-          <SwiperSlide >
+          <SwiperSlide>
             <ClientsSlideWrapper clients={[
               clients[0], clients[1], clients[3], clients[4],
-            ]} />
+            ]}
+            />
           </SwiperSlide>
-          <SwiperSlide >
+          <SwiperSlide>
             <ClientsSlideWrapper clients={[
               clients[5], clients[6], clients[7], clients[8],
-            ]} />
+            ]}
+            />
           </SwiperSlide>
         </Swiper>
         {/* shadow */}
@@ -88,7 +90,7 @@ function Clients() {
         <div className="w-[900px] h-[400px] radial-gradient-shadow rounded-full blur-2xl -z-10" />
       </div>
     </section>
-  )
+  );
 }
 
 export default Clients;

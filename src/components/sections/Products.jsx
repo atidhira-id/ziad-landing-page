@@ -56,7 +56,7 @@ function Products() {
         </ProductShowcase>
       </section>
     </section>
-  )
+  );
 }
 
 export default Products;

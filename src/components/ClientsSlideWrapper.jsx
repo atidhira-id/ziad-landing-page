@@ -1,5 +1,7 @@
-import React from 'react'
-import CardClients from './CardClients'
+/* eslint-disable consistent-return */
+/* eslint-disable array-callback-return */
+import React from 'react';
+import CardClients from './CardClients';
 
 function ClientsSlideWrapper({ clients }) {
   return (
@@ -9,7 +11,7 @@ function ClientsSlideWrapper({ clients }) {
           if (i <= 1) {
             return (
               <CardClients key={client.name} imgUrl={client.logo}>{client.name}</CardClients>
-            )
+            );
           }
         })}
       </div>
@@ -18,12 +20,12 @@ function ClientsSlideWrapper({ clients }) {
           if (i >= 2) {
             return (
               <CardClients key={client.name} imgUrl={client.logo}>{client.name}</CardClients>
-            )
+            );
           }
         })}
       </div>
     </section>
-  )
+  );
 }
 
-export default ClientsSlideWrapper
+export default ClientsSlideWrapper;
