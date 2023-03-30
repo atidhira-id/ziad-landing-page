@@ -3,8 +3,8 @@ import Link from 'next/link';
 
 function FloatingContactButton() {
   return (
-    <div className="fixed bottom-10 right-16 min-w-32 min-h-32 max-h-max max-w-max z-90 hover:scale-125 transition-all duration-200">
-      <Link href="wa.me/xxxx">
+    <div className="fixed bottom-8 right-6 md:bottom-10 md:right-16 min-w-32 min-h-32 max-h-max max-w-max z-90 hover:scale-125 transition-all duration-200">
+      <Link href="http://wa.me/6287776669010">
         <svg xmlns="http://www.w3.org/2000/svg" aria-label="WhatsApp" role="img" viewBox="0 0 512 512" fill="#000000" width="48px" height="48px">
           <g id="SVGRepo_bgCarrier" stroke-width="0" />
           <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
