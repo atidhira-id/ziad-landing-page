@@ -14,13 +14,13 @@ function Navbar() {
 
   return (
     <>
-      <nav className="sticky top-0 hidden md:flex linear-secondary md:w-full md:px-6 py-5 items-center jusitfy-center z-40">
+      <nav className="sticky top-0 hidden md:flex linear-secondary md:w-full md:px-6 py-5 items-center jusitfy-end z-40">
         {/* logo */}
         <div className="md:block md:grow">
-          <h1 className="font-open-sans font-bold text-xl text-white">Ziad</h1>
+          <h1 className="font-open-sans font-bold text-xl text-white">ZIAD</h1>
         </div>
         {/* navbar links */}
-        <div className="hidden md:flex md:w-full flex-col md:flex-row items-center justify-center gap-4 font-regular text-sm text-white">
+        <div className="hidden md:flex md:w-full flex-col md:flex-row items-center justify-end gap-4 font-regular text-sm text-white">
           <a href="#home">Home</a>
           <a href="#features">Features</a>
           <a href="#product">Product</a>
@@ -41,7 +41,7 @@ function Navbar() {
             <HamburgerIcon />
           </button>
           <div className="md:block grow text-center">
-            <h1 className="font-open-sans font-bold text-xl text-white">Ziad</h1>
+            <h1 className="font-open-sans font-bold text-xl text-white">ZIAD</h1>
           </div>
         </div>
         {isPhoneMenuOpen && (
