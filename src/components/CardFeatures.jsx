@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable react/self-closing-comp */
 import { motion } from 'framer-motion';
 
