@@ -22,7 +22,7 @@ function SectionTitle({ children: title, align = 'center' }) {
       className="my-12 w-full"
     >
       <h1
-        className="text-5xl font-extrabold text-brand-title"
+        className="text-3xl md:text-5xl font-extrabold text-brand-title"
         style={{
           textAlign: align,
         }}
