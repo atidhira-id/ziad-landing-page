@@ -3,7 +3,7 @@ import React from 'react';
 
 function AboutUsQuotes() {
   return (
-    <section className="w-full h-[80vh] flex flex-col justify-center items-center px-2 md:px-4">
+    <section className="w-full h-[60vh] md:h-[80vh] flex flex-col justify-center items-center px-2 md:px-4">
       {/* title */}
       <div className="w-full md:w-3/4 text-center mb-3">
         <h3 className="font-poppins font-bold text-xl md:text-2xl">
