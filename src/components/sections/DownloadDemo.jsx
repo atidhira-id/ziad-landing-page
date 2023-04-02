@@ -21,9 +21,10 @@ function DownloadDemo() {
         <p className="w-full md:w-3/4 text-center md:text-left text-gray-500">
           Anda bisa langsung mencoba menggunakan Aplikasi Demo kami yang tersedia di PlayStore! Jika Anda tertarik dengan menggunakan Ziad System, Silahkan hubungi kami.
         </p>
-        <div className="w-full flex items-center justify-center md:justify-start my-2">
+        <div className="w-full flex items-center justify-center md:justify-start gap-8 my-2">
           {/* download link */}
-          <DownloadLink />
+          <DownloadLink platforms="appstore" />
+          <DownloadLink platforms="playstore" />
         </div>
       </article>
       {/* product image on desktop */}
