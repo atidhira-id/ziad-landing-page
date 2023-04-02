@@ -33,7 +33,7 @@ function Jumbotron() {
           </motion.span>
         </section>
         {/* apps screenshots */}
-        <section className="relative w-full h-[55vh] md:min-h-[75vh] max-h-max flex flex-col justify-end items-center p-12 mt-8">
+        <section className="relative w-full h-[35vh] md:min-h-[75vh] max-h-max flex flex-col justify-end items-center p-12 mt-8">
           {/* screenshots */}
           <motion.div
             initial={{ opacity: 0 }}
