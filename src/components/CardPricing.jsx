@@ -1,5 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Button from './Button';
 import { CheckIcon } from './Icons';
@@ -40,7 +41,9 @@ function CardPricing({
             </li>
           ))}
         </ul>
-        <Button variant="fill" color="white">Langganan</Button>
+        <Link href="http://wa.me/6287776669010">
+          <Button variant="fill" color="white">Langganan</Button>
+        </Link>
       </motion.div>
     );
   }
@@ -77,7 +80,9 @@ function CardPricing({
           </li>
         ))}
       </ul>
-      <Button variant="fill" color="blue">Langganan</Button>
+      <Link href="http://wa.me/6287776669010">
+        <Button variant="fill" color="white">Langganan</Button>
+      </Link>
     </motion.div>
   );
 }
