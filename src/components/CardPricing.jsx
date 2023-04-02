@@ -15,7 +15,7 @@ function CardPricing({
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.4 }}
         viewport={{ once: true, margin: '100px' }}
-        className="min-h-[75vh] max-h-max flex flex-col items-center px-10 py-10 bg-brand rounded-lg shadow-xl"
+        className="min-h-[45vh] md:min-h-[75vh] max-h-max flex flex-col items-center px-10 py-10 bg-brand rounded-lg shadow-xl"
       >
         <article className="mb-9 flex flex-col items-center justify-center">
           {/* desc */}
