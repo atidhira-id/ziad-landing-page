@@ -11,7 +11,7 @@ import 'swiper/css/pagination';
 
 function Clients() {
   return (
-    <section className="relative w-full min-h-screen h-max md:h-[90vh] mb-20">
+    <section className="relative w-full min-h-[75vh] h-max md:h-[90vh] mb-20">
       {/* title */}
       <SectionTitle>Sudah membantu 30+ Pesantren di Indonesia</SectionTitle>
       {/* clients card */}
