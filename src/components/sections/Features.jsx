@@ -13,7 +13,7 @@ import 'swiper/css/pagination';
 
 function Features() {
   return (
-    <section className="relative w-full min-h-[100vh] h-max mb-44" id="features">
+    <section className="relative w-full min-h-[75vh] md:min-h-[90vh] h-max mb-44" id="features">
       {/* title */}
       <div className="mb-10">
         <SectionTitle>Fitur Unggulan</SectionTitle>
