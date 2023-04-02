@@ -1,7 +1,9 @@
+/* eslint-disable import/extensions */
 /* eslint-disable max-len */
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar } from 'swiper';
+import { features } from '@/data/data';
 import { SectionTitle } from '../Typography';
 import FeatureSlideWrapper from '../FeatureSlideSwapper';
 
@@ -10,48 +12,6 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 function Features() {
-  const features = [
-    {
-      title: 'Otomasi pembayaran',
-      imageUrl: './payment-icon.png',
-      desc: 'memudahkan penerimaan pembayaran dan memudahkan wali santri membayar tagihan',
-    },
-    {
-      title: 'Otomasi Pembayaran',
-      imageUrl: './payment-icon.png',
-      desc: 'memudahkan penerimaan pembayaran dan memudahkan wali santri membayar tagihan',
-    },
-    {
-      title: 'Absensi Terintegrasi',
-      imageUrl: './file-icon.png',
-      desc: 'memudahkan memantau keaktifan guru dan santri',
-    },
-    {
-      title: 'Keuangan',
-      imageUrl: './money-icon.png',
-      desc: 'mengelola keuangan agar data rapi dan mengurangi kesalahan pencatatan',
-    },
-    {
-      title: 'Administrasi',
-      imageUrl: './file-icon.png',
-      desc: 'mengelola seluruh data agar mudah diakses dan dibagikan',
-    },
-    {
-      title: 'Administrasi',
-      imageUrl: './file-icon.png',
-      desc: 'mengelola seluruh data agar mudah diakses dan dibagikan',
-    },
-    {
-      title: 'Administrasi',
-      imageUrl: './file-icon.png',
-      desc: 'mengelola seluruh data agar mudah diakses dan dibagikan',
-    },
-    {
-      title: 'Administrasi',
-      imageUrl: './file-icon.png',
-      desc: 'mengelola seluruh data agar mudah diakses dan dibagikan',
-    },
-  ];
   return (
     <section className="relative w-full min-h-[100vh] h-max mb-44" id="features">
       {/* title */}
