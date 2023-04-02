@@ -40,8 +40,9 @@ function Products() {
             </span>
           )}
           imgUrl="./card-mockup.png"
+          align="left"
         >
-          Alat SmartReader kami ciptakan untuk membaca kartu siswa dan guru untuk absen, pinjam buku, akses masuk tamu, menabung, dll.
+          Alat SmartCard ini dapat membantu santri dalam melakukan transaksi tanpa perlu menggunakan uang fisik.
         </ProductShowcase>
         <ProductShowcase
           title={(
@@ -49,9 +50,8 @@ function Products() {
               <span className="text-brand">Smart Reader {' '}</span> IoT
             </>
           )}
-          align="left"
         >
-          Alat SmartReader kami ciptakan untuk membaca kartu siswa dan guru untuk absen, pinjam buku, akses masuk tamu, menabung, dll.
+          Alat SmartReader dapat membantu proses administratif maupun transaksi siswa dan guru menjadi lebih mudah hanya dengan sekali tap saja.
         </ProductShowcase>
       </section>
     </section>
