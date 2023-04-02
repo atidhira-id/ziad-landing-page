@@ -54,7 +54,7 @@ function CardPricing({
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.4 }}
       viewport={{ once: true, margin: '100px' }}
-      className="min-h-[70vh] min-w-[20rem] max-h-max flex flex-col items-center px-7 py-8 bg-white rounded-lg shadow-xl"
+      className="min-h-[45vh] md:min-h-[75vh] min-w-[20rem] max-h-max flex flex-col items-center px-7 py-8 bg-white rounded-lg shadow-xl"
     >
       <article className="mb-9 flex flex-col items-center justify-center">
         {/* desc */}
@@ -81,7 +81,7 @@ function CardPricing({
         ))}
       </ul>
       <Link href="http://wa.me/6287776669010">
-        <Button variant="fill" color="white">Langganan</Button>
+        <Button variant="fill" color="blue">Langganan</Button>
       </Link>
     </motion.div>
   );
