@@ -7,7 +7,7 @@ function Pricing() {
   return (
     <section className="w-full min-h-screen h-max mb-40">
       <div className="mb-20">
-        <SectionTitle>Jasa</SectionTitle>
+        <SectionTitle>Mulai Gunakan Sistem Kami</SectionTitle>
       </div>
       <section className="w-full max-h-max mb-40 flex flex-col md:flex-row items-center justify-center gap-10">
         <CardPricing
