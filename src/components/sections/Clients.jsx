@@ -1,6 +1,8 @@
+/* eslint-disable import/extensions */
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar } from 'swiper';
 import { SectionTitle } from '../Typography';
+import { clients } from '@/data/data';
 import ClientsSlideWrapper from '../ClientsSlideWrapper';
 
 import 'swiper/css';
@@ -8,45 +10,6 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 function Clients() {
-  const clients = [
-    {
-      name: 'Mthq',
-      logo: './client-logo-one.png',
-    },
-    {
-      name: 'Al Muhajirin',
-      logo: './client-logo-one.png',
-    },
-    {
-      name: 'Ponpes Modern',
-      logo: './client-logo-one.png',
-    },
-    {
-      name: 'Tiara Aksara',
-      logo: './client-logo-one.png',
-    },
-    {
-      name: 'Daarel Qurro',
-      logo: './client-logo-one.png',
-    },
-    {
-      name: 'Daarul Hikmah',
-      logo: './client-logo-one.png',
-    },
-    {
-      name: 'Daarul Hikmah 1',
-      logo: './client-logo-one.png',
-    },
-    {
-      name: 'Daarul Hikmah 2',
-      logo: './client-logo-one.png',
-    },
-    {
-      name: 'Daarul Hikmah 4',
-      logo: './client-logo-one.png',
-    },
-  ];
-
   return (
     <section className="relative w-full min-h-screen h-max md:h-[90vh] mb-20">
       {/* title */}
