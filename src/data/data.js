@@ -1,39 +1,47 @@
 export const clients = [
   {
     name: 'Mthq',
-    logo: './client-logo-one.png',
+    logo: '',
   },
   {
     name: 'Al Muhajirin',
-    logo: './client-logo-one.png',
+    logo: '',
   },
   {
     name: 'Ponpes Modern',
-    logo: './client-logo-one.png',
+    logo: '',
   },
   {
     name: 'Tiara Aksara',
-    logo: './client-logo-one.png',
+    logo: '',
   },
   {
     name: 'Daarel Qurro',
-    logo: './client-logo-one.png',
+    logo: '',
   },
   {
     name: 'Daarul Hikmah',
-    logo: './client-logo-one.png',
+    logo: '',
   },
   {
-    name: 'Daarul Hikmah 1',
-    logo: './client-logo-one.png',
+    name: 'Ay-yusufiah',
+    logo: '',
   },
   {
-    name: 'Daarul Hikmah 2',
-    logo: './client-logo-one.png',
+    name: 'SDP Asshiddiqiyah 2',
+    logo: '',
   },
   {
-    name: 'Daarul Hikmah 4',
-    logo: './client-logo-one.png',
+    name: 'Shohibul Barokah',
+    logo: '',
+  },
+  {
+    name: 'Al Kautsar Bogor',
+    logo: '',
+  },
+  {
+    name: 'Amal ulummah',
+    logo: '',
   },
 ];
 
