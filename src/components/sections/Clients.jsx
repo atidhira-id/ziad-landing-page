@@ -44,6 +44,12 @@ function Clients() {
             ]}
             />
           </SwiperSlide>
+          <SwiperSlide>
+            <ClientsSlideWrapper clients={[
+              clients[9], clients[10], clients[10], clients[10],
+            ]}
+            />
+          </SwiperSlide>
         </Swiper>
         {/* shadow */}
       </section>
