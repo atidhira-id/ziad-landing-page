@@ -36,20 +36,16 @@ function Features() {
             }}
           >
             <SwiperSlide>
-              <FeatureSlideWrapper features={
-                [
-                  features[0], features[1],
-                ]
-              }
-              />
+              <FeatureSlideWrapper features={[features[0], features[1]]} />
             </SwiperSlide>
             <SwiperSlide>
-              <FeatureSlideWrapper features={
-                [
-                  features[2], features[3],
-                ]
-              }
-              />
+              <FeatureSlideWrapper features={[features[2], features[3]]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <FeatureSlideWrapper features={[features[4], features[5]]} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <FeatureSlideWrapper features={[features[6], features[7]]} />
             </SwiperSlide>
           </Swiper>
         </div>
