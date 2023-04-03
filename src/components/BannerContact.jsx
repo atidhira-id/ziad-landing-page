@@ -1,5 +1,6 @@
 /* eslint-disable max-len */
 import React from 'react';
+import Link from 'next/link';
 import Button from './Button';
 
 function BannerContact() {
@@ -16,9 +17,11 @@ function BannerContact() {
         </p>
       </article>
       <div className="mr-4">
-        <Button variant="fill" color="white">
-          Hubungi Kami
-        </Button>
+        <Link href="http://wa.me/6287776669010">
+          <Button variant="fill" color="white">
+            Hubungi Kami
+          </Button>
+        </Link>
       </div>
     </section>
   );
