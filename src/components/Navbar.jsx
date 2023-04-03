@@ -22,13 +22,13 @@ function Navbar() {
         {/* navbar links */}
         <div className="hidden md:flex md:w-full flex-col md:flex-row items-center justify-end gap-4 font-regular text-sm text-white">
           <a href="#home">Home</a>
-          <a href="#features">Features</a>
-          <a href="#product">Product</a>
-          <a href="#contact">Contact</a>
+          <a href="#features">Fitur Unggulan</a>
+          <a href="#product">Produk Kami</a>
+          <a href="#contact">Kontak</a>
           <div className="hidden md:block">
             <a href="#demo" className="block">
               <Button variant="fill" color="white">
-                Try demo
+                Coba Aplikasi
               </Button>
             </a>
           </div>
