@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-title-in-document-head */
 import {
   Html, Head, Main, NextScript,
 } from 'next/document';
@@ -5,10 +6,7 @@ import {
 export default function Document() {
   return (
     <Html lang="en">
-      <Head>
-        <title>ZIAD Smart</title>
-        <link rel="icon" href="./logo-ziad.png" />
-      </Head>
+      <Head />
       <body>
         <Main />
         <NextScript />
