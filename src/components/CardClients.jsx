@@ -14,7 +14,9 @@ function CardClients({ children: text = 'text', imgUrl }) {
       className="min-w-[18rem] max-w-[20rem] flex items-center justify-center"
     >
       <div className="w-full h-full px-12 py-4 flex items-center justify-center gap-4 bg-white shadow-lg rounded-md">
-        <img src={imgUrl || './client-logo-one.png'} alt="image" width="80px" height="auto" />
+        {imgUrl && (
+          <img src={imgUrl} alt="image" width="80px" height="auto" />
+        )}
         {/* <div className="w-10 h-10 bg-blue-500"> */}
         <h3 className="grow text-xl font-bold w-full text-green-700">
           {text}
