@@ -26,7 +26,7 @@ function Pricing() {
         />
         <CardPricing
           name="Bulanan"
-          shortDesc="Khusus untuk anak Yatim dan Duafa"
+          shortDesc=""
           price="10"
           desc={[
             'Dapat semua fitur',
@@ -51,7 +51,7 @@ function Pricing() {
         />
         <CardPricing
           name="Smart Card"
-          price="10"
+          price="15"
           desc={[
             'Bayar Sekali',
             'Full print dua sisi',
