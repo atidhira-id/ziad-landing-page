@@ -26,7 +26,7 @@ function Pricing() {
         />
         <CardPricing
           name="Bulanan"
-          shortDesc=""
+          shortDesc="Per Siswa Aktif"
           price="10"
           desc={[
             'Dapat semua fitur',
@@ -42,6 +42,7 @@ function Pricing() {
         <CardPricing
           name="Smart Reader"
           price="350"
+          shortDesc="Per Unit"
           desc={[
             'Bayar Sekali',
             'Garansi Selamanya',
@@ -51,6 +52,7 @@ function Pricing() {
         />
         <CardPricing
           name="Smart Card"
+          shortDesc="Per Unit"
           price="15"
           desc={[
             'Bayar Sekali',
