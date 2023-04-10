@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 /* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable @next/next/no-img-element */
-import React from 'react';
+import React, { useEffect } from 'react';
 import Link from 'next/link';
 import DownloadLink from '../DownloadLink';
 import { SectionTitle } from '../Typography';
@@ -17,8 +17,8 @@ function DownloadDemo() {
           <Link href="http://wa.me/6287776669010">
             <Button variant="fill" color="blue">Request Akun demo</Button>
           </Link>
-          <Link href="#demo">
-            <Button variant="fill" color="blue">Coba Aplikasi Mobile</Button>
+          <Link href="https://demo2.ziadsistem.com/dashboard">
+            <Button variant="fill" color="blue">Coba Aplikasi Dashboard</Button>
           </Link>
         </div>
       </section>
@@ -27,10 +27,10 @@ function DownloadDemo() {
         <article className="w-full md:w-3/5 pl-12 flex flex-col align-start justify-center gap-4">
           {/* title */}
           <h3 className="w-full mb-4 font-bold text-5xl text-center md:text-left">
-            Download
-            <span className="text-blue-600"> Demo</span>
+            Coba
+            <span className="text-blue-600"> Aplikasi</span>
             <br />
-            <span className="text-blue-600"> App</span>
+            Wali Murid
           </h3>
           {/* short desc */}
           <p className="w-full md:w-3/4 text-center md:text-left text-gray-500">
