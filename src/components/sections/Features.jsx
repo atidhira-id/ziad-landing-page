@@ -4,9 +4,9 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar } from 'swiper';
 import { features } from '@/data/data';
-import { SectionTitle, Title } from '../Typography';
+import { SectionTitle } from '../Typography';
 import FeatureSlideWrapper from '../FeatureSlideSwapper';
-import { CheckIcon } from '../Icons';
+import CardOtherFeatures from '../CardOtherFeatures';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -78,20 +78,17 @@ function Features() {
           <div className="w-[900px] h-[700px] radial-gradient-shadow rounded-full blur-2xl -z-10" />
         </div>
         <SectionTitle>Fitur Pelengkap</SectionTitle>
-        <section className="w-full h-[50vh] min-h-max flex justify-center items-center">
-          <section className="w-3/5 bg-white shadow-lg rounded-lg grid grid-cols-2 grid-rows-4">
-            {/* row 1 */}
-            <div className="flex items-center gap-4 justify-center col-start-1 col-end-3 row-start-1 row-end-1">
-              <div className="flex justify-center items-center gap-4">
-                <CheckIcon size={16} color="#1C77FF" />
-                Kantin
-              </div>
-              <div className="flex justify-center items-center gap-4">
-                <CheckIcon size={16} color="#1C77FF" />
-                Kantin
-              </div>
-            </div>
-          </section>
+        <section className="w-full  h-[65vh] min-h-max flex justify-center items-center gap-8">
+          <CardOtherFeatures
+            desc={['kantin', 'batagor', 'siomay', 'ketoprak']}
+            title="Kantin"
+            imageUrl="./payment-icon.png"
+          />
+          <CardOtherFeatures
+            desc={['kantin', 'batagor', 'siomay', 'ketoprak']}
+            title="Kantin"
+            imageUrl="./payment-icon.png"
+          />
         </section>
       </section>
     </section>
