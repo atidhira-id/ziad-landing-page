@@ -46,7 +46,7 @@ function Clients() {
           </SwiperSlide>
           <SwiperSlide>
             <ClientsSlideWrapper clients={[
-              clients[9], clients[10], clients[10], clients[10],
+              clients[9], clients[10], clients[11], clients[12],
             ]}
             />
           </SwiperSlide>
