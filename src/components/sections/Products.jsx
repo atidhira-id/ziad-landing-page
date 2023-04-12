@@ -27,6 +27,8 @@ function Products() {
               <span className="text-brand">Dashboard{' '}</span> Admin
             </>
           )}
+          imgUrl="./dashboard-image.png"
+          imgSize="500"
         >
           Aplikasi website yang mudah diakses untuk membantu setiap kegiatan dan administrasi guru atau karyawan.
         </ProductShowcase>
@@ -50,6 +52,7 @@ function Products() {
               <span className="text-brand">Smart Reader {' '}</span> IoT
             </>
           )}
+          imgUrl="./smart-reader-image.png"
         >
           Alat SmartReader dapat membantu proses administratif maupun transaksi siswa dan guru menjadi lebih mudah hanya dengan sekali tap saja.
         </ProductShowcase>
