@@ -10,6 +10,8 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 function Clients() {
+  const mapClientData = (start, end) => clients.slice(start, end).map((client) => client);
+
   return (
     <section className="relative w-full min-h-[75vh] h-max md:h-[90vh] mb-20">
       {/* title */}
@@ -33,22 +35,28 @@ function Clients() {
           }}
         >
           <SwiperSlide>
-            <ClientsSlideWrapper clients={[
-              clients[0], clients[1], clients[3], clients[4],
-            ]}
-            />
+            <ClientsSlideWrapper clients={mapClientData(0, 4)} />
           </SwiperSlide>
           <SwiperSlide>
-            <ClientsSlideWrapper clients={[
-              clients[5], clients[6], clients[7], clients[8],
-            ]}
-            />
+            <ClientsSlideWrapper clients={mapClientData(3, 7)} />
           </SwiperSlide>
           <SwiperSlide>
-            <ClientsSlideWrapper clients={[
-              clients[9], clients[10], clients[11], clients[12],
-            ]}
-            />
+            <ClientsSlideWrapper clients={mapClientData(6, 10)} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ClientsSlideWrapper clients={mapClientData(9, 13)} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ClientsSlideWrapper clients={mapClientData(11, 15)} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ClientsSlideWrapper clients={mapClientData(14, 18)} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ClientsSlideWrapper clients={mapClientData(17, 21)} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ClientsSlideWrapper clients={mapClientData(20, 24)} />
           </SwiperSlide>
         </Swiper>
         {/* shadow */}
