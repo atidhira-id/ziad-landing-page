@@ -80,13 +80,13 @@ function Features() {
         <SectionTitle>Fitur Pelengkap</SectionTitle>
         <section className="w-full  h-[65vh] min-h-max flex justify-center items-center gap-8">
           <CardOtherFeatures
-            desc={['kantin', 'batagor', 'siomay', 'ketoprak']}
+            desc={['Feature desc 1', 'Feature desc 2', 'Feature desc 3', 'Feature desc 4']}
             title="Kantin"
             imageUrl="./payment-icon.png"
           />
           <CardOtherFeatures
-            desc={['kantin', 'batagor', 'siomay', 'ketoprak']}
-            title="Kantin"
+            desc={['Feature desc 1', 'Feature desc 2', 'Feature desc 3', 'Feature desc 4']}
+            title="Perpustakaan"
             imageUrl="./payment-icon.png"
           />
         </section>
