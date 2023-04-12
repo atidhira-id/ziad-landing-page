@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 /* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable @next/next/no-img-element */
-import React, { useEffect } from 'react';
+import React from 'react';
 import Link from 'next/link';
 import DownloadLink from '../DownloadLink';
 import { SectionTitle } from '../Typography';
@@ -44,7 +44,7 @@ function DownloadDemo() {
         </article>
         {/* product image on desktop */}
         <div className="hidden md:block">
-          <img src="./phone-image.png" alt="phone-image-apps" height="auto" className="w-[200px] md:w-[400px]" />
+          <img src="./demo-app-phone-mockup.png" alt="phone-image-apps" height="auto" className="w-[200px] md:w-[400px]" />
         </div>
       </section>
     </>
