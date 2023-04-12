@@ -40,9 +40,9 @@ function Jumbotron() {
             whileInView={{ opacity: 1 }}
             className="w-3/4 h-max absolute -top-32  md:-top-64 flex gap-12 items-center justify-center"
           >
-            <PhoneMockup className="hidden md:block" size="500px" />
-            <PhoneMockup className="w-3/4 md:w-max" />
-            <PhoneMockup className="hidden md:block" size="500px" />
+            <PhoneMockup className="hidden md:block" size="500px" imageUrl="./jumbotron-phone-mockup1.png" />
+            <PhoneMockup className="w-3/4 md:w-max" imageUrl="./main-phone-mockup.png" />
+            <PhoneMockup className="hidden md:block" size="500px" imageUrl="./jumbotron-phone-mockup2.png" />
           </motion.div>
         </section>
       </section>
