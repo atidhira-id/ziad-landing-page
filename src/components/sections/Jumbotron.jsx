@@ -21,7 +21,7 @@ function Jumbotron() {
           >
             ZIAD
             <br />
-            Smart Education System
+            Integrated System for Better School Management
           </motion.h1>
           <motion.span
             initial={{ opacity: 0 }}
@@ -29,7 +29,7 @@ function Jumbotron() {
             transition={{ ease: 'easeInOut' }}
             className="text-md md:text-md w-full md:w-3/4 px-4 md:px-8 md:mb-8"
           >
-            Solusi cerdas memanfaatkan teknologi terkini untuk mengelola pesantren dan sekolah islam
+            Solusi  memanfaatkan teknologi terkini untuk mengelola pesantren dan sekolah islam
           </motion.span>
         </section>
         {/* apps screenshots */}
@@ -41,7 +41,7 @@ function Jumbotron() {
             className="w-3/4 h-max absolute -top-32  md:-top-64 flex gap-12 items-center justify-center"
           >
             <PhoneMockup className="hidden md:block" size="500px" imageUrl="./jumbotron-phone-mockup1.png" />
-            <PhoneMockup className="w-3/4 md:w-max" imageUrl="./main-phone-mockup.png" />
+            <PhoneMockup className="w-3/4 md:w-max" imageUrl="./phone-mockup.png" />
             <PhoneMockup className="hidden md:block" size="500px" imageUrl="./jumbotron-phone-mockup2.png" />
           </motion.div>
         </section>

@@ -1,47 +1,99 @@
 export const clients = [
   {
     name: 'Mthq',
-    logo: '',
+    logo: './logo-mthq.webp',
   },
   {
     name: 'Al Muhajirin',
-    logo: '',
+    logo: './al-muhajirin.webp',
   },
   {
-    name: 'Ponpes Modern',
-    logo: '',
+    name: 'Ponpes Modern Ay-yusufiah',
+    logo: './logo-ponpes-modern.webp',
   },
   {
     name: 'Tiara Aksara',
-    logo: '',
+    logo: './logo-tiara-aksara.webp',
   },
   {
     name: 'Daarel Qurro',
-    logo: '',
+    logo: './logo-daarelqurro.webp',
   },
   {
     name: 'Daarul Hikmah',
-    logo: '',
+    logo: './logo-darulhikmah.webp',
   },
   {
-    name: 'Ay-yusufiah',
-    logo: '',
+    name: 'Ay-Bahjah Cianjur',
+    logo: './logo-albahjah-cianjur.webp',
   },
   {
     name: 'SDP Asshiddiqiyah 2',
-    logo: '',
+    logo: './logo-sdp.webp',
   },
   {
     name: 'Shohibul Barokah',
-    logo: '',
+    logo: './logo-shohibul-barokah.webp',
   },
   {
     name: 'Al Kautsar Bogor',
-    logo: '',
+    logo: './logo-alkasmart.webp',
   },
   {
     name: 'Amal ulummah',
-    logo: '',
+    logo: './logo-amalulummah.webp',
+  },
+  {
+    name: 'Imumahabbah',
+    logo: './logo-imumahabbah.webp',
+  },
+  {
+    name: 'Khadijah Islamic School',
+    logo: './logo-khadijah.webp',
+  },
+  {
+    name: 'Madinah Al hijrah',
+    logo: './logo-madinah.webp',
+  },
+  {
+    name: 'Al Bayyinah',
+    logo: './logo-albayyinah.webp',
+  },
+  {
+    name: 'Al Hasyimiyah',
+    logo: './logo-alhasyimiyah.webp',
+  },
+  {
+    name: 'Al Kautsar Banjar',
+    logo: './logo-alkautsar-banjar.webp',
+  },
+  {
+    name: 'Al Wasilah',
+    logo: './logo-alwasilah.webp',
+  },
+  {
+    name: 'Azma',
+    logo: './logo-azma.webp',
+  },
+  {
+    name: 'Binka',
+    logo: './logo-binka.webp',
+  },
+  {
+    name: 'Essulam',
+    logo: './logo-essulam.webp',
+  },
+  {
+    name: 'Fajrul Karim',
+    logo: './logo-fajrul-karim.webp',
+  },
+  {
+    name: 'Imumahabbah',
+    logo: './logo-imumahabbah.webp',
+  },
+  {
+    name: 'Kebun Tumbuh',
+    logo: './logo-kebun Tumbuh.webp',
   },
 ];
 

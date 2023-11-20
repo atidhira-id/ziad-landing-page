@@ -41,7 +41,7 @@ function Pricing() {
       <section className="w-full max-h-max mb-40 flex flex-col md:flex-row items-center justify-center gap-10">
         <CardPricing
           name="Smart Reader"
-          price="350"
+          price="400"
           shortDesc="Per Unit"
           desc={[
             'Bayar Sekali',
