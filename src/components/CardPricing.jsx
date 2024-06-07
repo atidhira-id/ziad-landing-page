@@ -6,7 +6,7 @@ import Button from './Button';
 import { CheckIcon } from './Icons';
 
 function CardPricing({
-  type, shortDesc, desc, price, name,
+  type, shortDesc, desc, price, name, discount,
 }) {
   if (type === 'primary') {
     return (
@@ -63,11 +63,23 @@ function CardPricing({
         </span>
         {/* price */}
         <h1 className="text-4xl font-bold font-poppins text-brand mb-3">
-          {`Rp${price}K`}
+          {discount ? (
+            <>
+              <span className="line-through">{`Rp${price}K `}</span>
+              {`${discount}K`}
+            </>
+          ) : (
+            // eslint-disable-next-line react/jsx-no-useless-fragment
+            <>
+              {`Rp${price}K`}
+            </>
+          )}
         </h1>
         {/* add on desc */}
         <span className="w-3/4 font-light text-xs text-center text-gray-600 opacity-75">
           {shortDesc}
+          {/* eslint-disable-next-line react/no-unescaped-entities */}
+          output: 'export',
         </span>
       </article>
       <ul className="grow w-full flex flex-col items-start justify-start text-left md:items-center">
