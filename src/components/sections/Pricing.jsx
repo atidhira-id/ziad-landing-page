@@ -27,7 +27,8 @@ function Pricing() {
         <CardPricing
           name="Bulanan"
           shortDesc="Per Siswa Aktif"
-          price="10"
+          price="15"
+          discount="12"
           desc={[
             'Dapat semua fitur',
             'Bebas biaya registrasi',

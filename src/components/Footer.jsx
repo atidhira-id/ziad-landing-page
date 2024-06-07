@@ -17,7 +17,7 @@ function Footer() {
           <p>
             0877-7666-9010 (Tulus)
             <br />
-            0812-1105-5682 (Alka)
+            0852-1589-1585 (Mita)
             <br />
             ptmitracerdasnusantara@gmail.com
           </p>
