@@ -1,7 +1,8 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import React from 'react'
-import { motion } from 'framer-motion'
-import Button from './Button'
+import React from 'react';
+import Link from 'next/link';
+import { motion } from 'framer-motion';
+import Button from './Button';
 import { CheckIcon } from './Icons';
 
 function CardPricing({
@@ -14,7 +15,7 @@ function CardPricing({
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.4 }}
         viewport={{ once: true, margin: '100px' }}
-        className="min-h-[75vh] max-h-max flex flex-col items-center px-10 py-10 bg-brand rounded-lg shadow-xl"
+        className="min-h-[45vh] md:min-h-[75vh] max-h-max flex flex-col items-center px-10 py-10 bg-brand rounded-lg shadow-xl"
       >
         <article className="mb-9 flex flex-col items-center justify-center">
           {/* desc */}
@@ -40,9 +41,11 @@ function CardPricing({
             </li>
           ))}
         </ul>
-        <Button variant="fill" color="white">Langganan</Button>
+        <Link href="http://wa.me/6287776669010">
+          <Button variant="fill" color="white">Langganan</Button>
+        </Link>
       </motion.div>
-    )
+    );
   }
 
   return (
@@ -51,7 +54,7 @@ function CardPricing({
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.4 }}
       viewport={{ once: true, margin: '100px' }}
-      className="min-h-[70vh] min-w-[20rem] max-h-max flex flex-col items-center px-7 py-8 bg-white rounded-lg shadow-xl"
+      className="min-h-[45vh] md:min-h-[75vh] min-w-[20rem] max-h-max flex flex-col items-center px-7 py-8 bg-white rounded-lg shadow-xl"
     >
       <article className="mb-9 flex flex-col items-center justify-center">
         {/* desc */}
@@ -77,9 +80,11 @@ function CardPricing({
           </li>
         ))}
       </ul>
-      <Button variant="fill" color="blue">Langganan</Button>
+      <Link href="http://wa.me/6287776669010">
+        <Button variant="fill" color="blue">Langganan</Button>
+      </Link>
     </motion.div>
-  )
+  );
 }
 
 export default CardPricing;

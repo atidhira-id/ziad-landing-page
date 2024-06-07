@@ -1,7 +1,6 @@
 /* eslint-disable react/jsx-one-expression-per-line */
 /* eslint-disable max-len */
 import React from 'react';
-import BannerProduct from '../BannerProduct';
 import ProductShowcase from '../ProductShowcase';
 import { SectionTitle } from '../Typography';
 
@@ -28,6 +27,8 @@ function Products() {
               <span className="text-brand">Dashboard{' '}</span> Admin
             </>
           )}
+          imgUrl="./dashboard-image.png"
+          imgSize="500"
         >
           Aplikasi website yang mudah diakses untuk membantu setiap kegiatan dan administrasi guru atau karyawan.
         </ProductShowcase>
@@ -41,8 +42,9 @@ function Products() {
             </span>
           )}
           imgUrl="./card-mockup.png"
+          align="left"
         >
-          Alat SmartReader kami ciptakan untuk membaca kartu siswa dan guru untuk absen, pinjam buku, akses masuk tamu, menabung, dll.
+          Alat SmartCard ini dapat membantu santri dalam melakukan transaksi tanpa perlu menggunakan uang fisik.
         </ProductShowcase>
         <ProductShowcase
           title={(
@@ -50,13 +52,13 @@ function Products() {
               <span className="text-brand">Smart Reader {' '}</span> IoT
             </>
           )}
-          align="left"
+          imgUrl="./smart-reader-image.png"
         >
-          Alat SmartReader kami ciptakan untuk membaca kartu siswa dan guru untuk absen, pinjam buku, akses masuk tamu, menabung, dll.
+          Alat SmartReader dapat membantu proses administratif maupun transaksi siswa dan guru menjadi lebih mudah hanya dengan sekali tap saja.
         </ProductShowcase>
       </section>
     </section>
-  )
+  );
 }
 
 export default Products;

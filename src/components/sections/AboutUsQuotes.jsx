@@ -1,15 +1,21 @@
 /* eslint-disable max-len */
 import React from 'react';
+import Image from 'next/image';
 
 function AboutUsQuotes() {
   return (
-    <section className="w-full h-[80vh] flex flex-col justify-center items-center px-2 md:px-4">
+    <section className="w-full h-[60vh] md:h-[100vh] flex flex-col justify-center items-center px-2 md:px-4 md:mb-20">
       {/* title */}
+      <div className="mb-8">
+        <a href="http://www.freepik.com" className="hidden">Designed by vectorjuice / Freepik</a>
+        <Image src="./islamic-school-vector.jpg" height={800} width={800} alt="islamic-school-pesantren-pesantren-modern" />
+      </div>
       <div className="w-full md:w-3/4 text-center mb-3">
         <h3 className="font-poppins font-bold text-xl md:text-2xl">
           Membantu pesantren dan sekolah islam
           <span className="text-blue-600">
-            {' '}Memanfaatkan Teknologi
+            {' '}
+            Memanfaatkan Teknologi
           </span>
         </h3>
       </div>

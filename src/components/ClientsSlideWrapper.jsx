@@ -1,8 +1,9 @@
-import React from 'react'
-import CardClients from './CardClients'
+/* eslint-disable consistent-return */
+/* eslint-disable array-callback-return */
+import React from 'react';
+import CardClients from './CardClients';
 
 function ClientsSlideWrapper({ clients }) {
-  console.log(clients);
   return (
     <section className="flex flex-col items-center justify-center h-full w-full gap-8">
       <div className="flex flex-col md:flex-row items-center justify-center gap-8 w-full">
@@ -10,7 +11,7 @@ function ClientsSlideWrapper({ clients }) {
           if (i <= 1) {
             return (
               <CardClients key={client.name} imgUrl={client.logo}>{client.name}</CardClients>
-            )
+            );
           }
         })}
       </div>
@@ -19,12 +20,12 @@ function ClientsSlideWrapper({ clients }) {
           if (i >= 2) {
             return (
               <CardClients key={client.name} imgUrl={client.logo}>{client.name}</CardClients>
-            )
+            );
           }
         })}
       </div>
     </section>
-  )
+  );
 }
 
-export default ClientsSlideWrapper
+export default ClientsSlideWrapper;

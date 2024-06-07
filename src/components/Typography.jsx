@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import React from 'react'
+import React from 'react';
 import { motion } from 'framer-motion';
 
 function Title({ children: title = 'xl', size: className, align = 'text-center' }) {
@@ -22,7 +22,7 @@ function SectionTitle({ children: title, align = 'center' }) {
       className="my-12 w-full"
     >
       <h1
-        className="text-5xl font-extrabold text-brand-title"
+        className="text-3xl md:text-5xl font-extrabold text-brand-title"
         style={{
           textAlign: align,
         }}

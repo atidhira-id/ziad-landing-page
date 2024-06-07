@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import BannerContact from '../BannerContact';
 import CardPricing from '../CardPricing';
 import { SectionTitle } from '../Typography';
@@ -7,7 +7,7 @@ function Pricing() {
   return (
     <section className="w-full min-h-screen h-max mb-40">
       <div className="mb-20">
-        <SectionTitle>Pricing</SectionTitle>
+        <SectionTitle>Mulai Gunakan Sistem Kami</SectionTitle>
       </div>
       <section className="w-full max-h-max mb-40 flex flex-col md:flex-row items-center justify-center gap-10">
         <CardPricing
@@ -26,7 +26,7 @@ function Pricing() {
         />
         <CardPricing
           name="Bulanan"
-          shortDesc="Khusus untuk anak Yatim dan Duafa"
+          shortDesc="Per Siswa Aktif"
           price="10"
           desc={[
             'Dapat semua fitur',
@@ -41,7 +41,8 @@ function Pricing() {
       <section className="w-full max-h-max mb-40 flex flex-col md:flex-row items-center justify-center gap-10">
         <CardPricing
           name="Smart Reader"
-          price="350"
+          price="400"
+          shortDesc="Per Unit"
           desc={[
             'Bayar Sekali',
             'Garansi Selamanya',
@@ -51,7 +52,8 @@ function Pricing() {
         />
         <CardPricing
           name="Smart Card"
-          price="10"
+          shortDesc="Per Unit"
+          price="15"
           desc={[
             'Bayar Sekali',
             'Full print dua sisi',
@@ -62,7 +64,7 @@ function Pricing() {
       </section>
       <BannerContact />
     </section>
-  )
+  );
 }
 
 export default Pricing;

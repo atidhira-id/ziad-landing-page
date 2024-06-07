@@ -1,12 +1,14 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable react/self-closing-comp */
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
 
 function CardFeatures({ children: desc, title = 'title', imageUrl }) {
   return (
     <motion.div
-      initial={{opacity: 0, y: -50}}
-      whileInView={{opacity: 1, y: 0}}
-      transition={{ease: 'easeInOut', delay: 0.3}}
+      initial={{ opacity: 0, y: -50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ ease: 'easeInOut', delay: 0.3 }}
       className="flex items-center justify-center bg-white"
     >
       <div className="w-72 h-80 max-h-max px-4 pb-4 pt-8 flex flex-col items-center justify-center shadow-lg rounded-lg">
@@ -23,7 +25,7 @@ function CardFeatures({ children: desc, title = 'title', imageUrl }) {
         </div>
       </div>
     </motion.div>
-  )
+  );
 }
 
 export default CardFeatures;

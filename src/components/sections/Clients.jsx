@@ -1,60 +1,23 @@
-import { useRef, useEffect } from 'react';
-import CardClients from '../CardClients';
-import { SectionTitle } from '../Typography';
+/* eslint-disable import/extensions */
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar } from 'swiper';
+import { SectionTitle } from '../Typography';
+import { clients } from '@/data/data';
+import ClientsSlideWrapper from '../ClientsSlideWrapper';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import ClientsSlideWrapper from '../ClientsSlideWrapper';
 
 function Clients() {
-  const clients = [
-    {
-      name: "Mthq",
-      logo: "./client-logo-one.png"
-    },
-    {
-      name: "Al Muhajirin",
-      logo: "./client-logo-one.png"
-    },
-    {
-      name: "Ponpes Modern",
-      logo: "./client-logo-one.png"
-    },
-    {
-      name: "Tiara Aksara",
-      logo: "./client-logo-one.png"
-    },
-    {
-      name: "Daarel Qurro",
-      logo: "./client-logo-one.png"
-    },
-    {
-      name: "Daarul Hikmah",
-      logo: "./client-logo-one.png"
-    },
-    {
-      name: "Daarul Hikmah 1",
-      logo: "./client-logo-one.png"
-    },
-    {
-      name: "Daarul Hikmah 2",
-      logo: "./client-logo-one.png"
-    },
-    {
-      name: "Daarul Hikmah 4",
-      logo: "./client-logo-one.png"
-    }, 
-  ]
+  const mapClientData = (start, end) => clients.slice(start, end).map((client) => client);
 
   return (
-    <section className="relative w-full min-h-screen h-max md:h-[90vh] mb-20">
+    <section className="relative w-full min-h-[75vh] h-max md:h-[90vh] mb-20">
       {/* title */}
       <SectionTitle>Sudah membantu 30+ Pesantren di Indonesia</SectionTitle>
       {/* clients card */}
-      <section className="w-full h-full max-h-max flex flex-col justify-center items-center md:h-2/3 gap-8 md:px-24 z-20">
+      <section className="w-full h-full max-h-max mt:6 md:mt-12 flex flex-col justify-center items-center md:h-2/3 gap-8 md:px-24 z-20">
         {/* row 1 */}
         <Swiper
           modules={[Navigation, Pagination, Scrollbar]}
@@ -71,15 +34,29 @@ function Clients() {
             maxWidth: '100vw',
           }}
         >
-          <SwiperSlide >
-            <ClientsSlideWrapper clients={[
-              clients[0], clients[1], clients[3], clients[4],
-            ]} />
+          <SwiperSlide>
+            <ClientsSlideWrapper clients={mapClientData(0, 4)} />
           </SwiperSlide>
-          <SwiperSlide >
-            <ClientsSlideWrapper clients={[
-              clients[5], clients[6], clients[7], clients[8],
-            ]} />
+          <SwiperSlide>
+            <ClientsSlideWrapper clients={mapClientData(3, 7)} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ClientsSlideWrapper clients={mapClientData(6, 10)} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ClientsSlideWrapper clients={mapClientData(9, 13)} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ClientsSlideWrapper clients={mapClientData(11, 15)} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ClientsSlideWrapper clients={mapClientData(14, 18)} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ClientsSlideWrapper clients={mapClientData(17, 21)} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ClientsSlideWrapper clients={mapClientData(20, 24)} />
           </SwiperSlide>
         </Swiper>
         {/* shadow */}
@@ -88,7 +65,7 @@ function Clients() {
         <div className="w-[900px] h-[400px] radial-gradient-shadow rounded-full blur-2xl -z-10" />
       </div>
     </section>
-  )
+  );
 }
 
 export default Clients;

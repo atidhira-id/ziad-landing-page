@@ -14,21 +14,21 @@ function Navbar() {
 
   return (
     <>
-      <nav className="sticky top-0 hidden md:flex linear-secondary md:w-full md:px-6 py-5 items-center jusitfy-center z-40">
+      <nav className="hidden md:flex linear-secondary md:w-full md:px-6 py-5 items-center jusitfy-end z-40">
         {/* logo */}
         <div className="md:block md:grow">
-          <h1 className="font-open-sans font-bold text-xl text-white">Ziad</h1>
+          <h1 className="font-open-sans font-bold text-xl text-white">ZIAD</h1>
         </div>
         {/* navbar links */}
-        <div className="hidden md:flex md:w-full flex-col md:flex-row items-center justify-center gap-4 font-regular text-sm text-white">
+        <div className="hidden md:flex md:w-full flex-col md:flex-row items-center justify-end gap-4 font-regular text-sm text-white">
           <a href="#home">Home</a>
-          <a href="#features">Features</a>
-          <a href="#product">Product</a>
-          <a href="#contact">Contact</a>
+          <a href="#features">Fitur Unggulan</a>
+          <a href="#product">Produk Kami</a>
+          <a href="#contact">Kontak</a>
           <div className="hidden md:block">
             <a href="#demo" className="block">
               <Button variant="fill" color="white">
-                Try demo
+                Coba Aplikasi
               </Button>
             </a>
           </div>
@@ -36,12 +36,12 @@ function Navbar() {
       </nav>
       {/* hamburger icon */}
       <AnimatePresence>
-        <div className="md:hidden absolute right-4 top-4 w-full bg-brand flex justify-center items-center py-2 px-3">
+        <div className="md:hidden fixed top-0 w-full bg-brand flex justify-center items-center py-2 px-3 z-40">
           <button type="button" className="md:hidden" onClick={togglePhoneMenu}>
             <HamburgerIcon />
           </button>
           <div className="md:block grow text-center">
-            <h1 className="font-open-sans font-bold text-xl text-white">Ziad</h1>
+            <h1 className="font-open-sans font-bold text-xl text-white">ZIAD</h1>
           </div>
         </div>
         {isPhoneMenuOpen && (

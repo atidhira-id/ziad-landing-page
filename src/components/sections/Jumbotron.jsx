@@ -3,16 +3,15 @@
 /* eslint-disable max-len */
 import { motion } from 'framer-motion';
 import PhoneMockup from '../PhoneMockup';
-import DownloadLink from '../DownloadLink';
 
 function Jumbotron() {
   return (
     <>
       {/* outer container */}
-      <section className="w-full h-max mb-44 flex flex-col" id="home">
+      <section className="w-full h-max mb-16 md:mb-44 flex flex-col" id="home">
         {/* title and desc */}
         <section
-          className="linear-primary w-full h-screen flex flex-col items-center justify-start text-white text-center"
+          className="linear-primary w-full h-[60vh] md:h-screen flex flex-col items-center justify-center md:justify-start text-white text-center"
         >
           <motion.h1
             initial={{ opacity: 0, y: '-10' }}
@@ -22,7 +21,7 @@ function Jumbotron() {
           >
             ZIAD
             <br />
-            Smart Education System
+            Integrated System for Better School Management
           </motion.h1>
           <motion.span
             initial={{ opacity: 0 }}
@@ -30,26 +29,26 @@ function Jumbotron() {
             transition={{ ease: 'easeInOut' }}
             className="text-md md:text-md w-full md:w-3/4 px-4 md:px-8 md:mb-8"
           >
-            Solusi cerdas memanfaatkan teknologi terkini untuk mengelola pesantren dan sekolah islam
+            Solusi  memanfaatkan teknologi terkini untuk mengelola pesantren dan sekolah islam
           </motion.span>
         </section>
         {/* apps screenshots */}
-        <section className="relative w-full h-[55vh] md:min-h-[75vh] max-h-max flex flex-col justify-end items-center p-12 mt-12">
+        <section className="relative w-full h-[35vh] md:min-h-[75vh] max-h-max flex flex-col justify-end items-center p-12 mt-8">
           {/* screenshots */}
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             className="w-3/4 h-max absolute -top-32  md:-top-64 flex gap-12 items-center justify-center"
           >
-            <PhoneMockup className="hidden md:block" size="500px" />
-            <PhoneMockup className="w-3/4 md:w-max" />
-            <PhoneMockup className="hidden md:block" size="500px" />
+            <PhoneMockup className="hidden md:block" size="500px" imageUrl="./jumbotron-phone-mockup1.png" />
+            <PhoneMockup className="w-3/4 md:w-max" imageUrl="./phone-mockup.png" />
+            <PhoneMockup className="hidden md:block" size="500px" imageUrl="./jumbotron-phone-mockup2.png" />
           </motion.div>
         </section>
       </section>
 
     </>
-  )
+  );
 }
 
 export default Jumbotron;
