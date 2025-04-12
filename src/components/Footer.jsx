@@ -17,7 +17,7 @@ function Footer() {
           <p>
             0877-7666-9010 (Tulus)
             <br />
-            0852-1589-1585 (Mita)
+            0895-3211-71701 (Regal)
             <br />
             ptmitracerdasnusantara@gmail.com
           </p>
