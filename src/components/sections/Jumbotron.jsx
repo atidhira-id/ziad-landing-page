@@ -1,52 +1,69 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable react/react-in-jsx-scope */
 /* eslint-disable max-len */
-import { motion } from 'framer-motion';
-import PhoneMockup from '../PhoneMockup';
+import { motion } from "framer-motion";
+import PhoneMockup from "../PhoneMockup";
+import { IoLogoYoutube } from "react-icons/io";
+import Button from "../Button";
 
 function Jumbotron() {
   return (
     <>
       {/* outer container */}
-      <section className="w-full h-max mb-16 md:mb-44 flex flex-col" id="home">
-        {/* title and desc */}
-        <section
-          className="linear-primary w-full h-[60vh] md:h-screen flex flex-col items-center justify-center md:justify-start text-white text-center"
-        >
-          <motion.h1
-            initial={{ opacity: 0, y: '-10' }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ ease: 'easeInOut' }}
-            className="text-2xl md:text-5xl font-extrabold px-3 md:px-4 mt-4 md:mt-28 md:py-12"
-          >
-            ZIAD
-            <br />
-            Integrated System for Better School Management
-          </motion.h1>
-          <motion.span
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ ease: 'easeInOut' }}
-            className="text-md md:text-md w-full md:w-3/4 px-4 md:px-8 md:mb-8"
-          >
-            Solusi  memanfaatkan teknologi terkini untuk mengelola pesantren dan sekolah islam
-          </motion.span>
+      <section
+        className="w-full h-max pt-32 lg:pt-40 mb-16 flex flex-col gap-6"
+        id="home"
+      >
+        <section className="w-full flex flex-col items-center justify-center md:justify-start text-center gap-6 lg:gap-8">
+          <h1 className="text-3xl leading-snug sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-wide text-brand-title">
+            Integrated System <br /> for Better <br /> School Management
+          </h1>
+          <span className="text-base lg:text-lg w-3/4 max-w-3xl text-gray-600">
+            Dukung kemajuan lembaga Anda dengan platform all-in-one: mulai dari
+            manajemen siswa, pembayaran digital, e-learning, hingga komunikasi
+            wali murid — semuanya dalam satu tempat.
+          </span>
+          <div className="w-3/4 flex flex-col sm:flex-row sm:justify-center gap-3 lg:gap-6">
+            <a href="#demo">
+              <Button
+                variant="fill"
+                color="blue"
+                className="w-full sm:w-max lg:text-lg py-4 shadow-md"
+              >
+                Download Ziad System
+              </Button>
+            </a>
+            <a href="#">
+              <Button
+                variant="fill"
+                color="white"
+                className="w-full lg:text-lg py-4 flex justify-center items-center gap-2 shadow-md"
+              >
+                <IoLogoYoutube size={18} />
+                Demo Aplikasi
+              </Button>
+            </a>
+          </div>
         </section>
+
         {/* apps screenshots */}
-        <section className="relative w-full h-[35vh] md:min-h-[75vh] max-h-max flex flex-col justify-end items-center p-12 mt-8">
-          {/* screenshots */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            className="w-3/4 h-max absolute -top-32  md:-top-64 flex gap-12 items-center justify-center"
-          >
-            <PhoneMockup className="hidden md:block" size="500px" imageUrl="./jumbotron-phone-mockup1.png" />
-            <PhoneMockup className="w-3/4 md:w-max" imageUrl="./phone-mockup.png" />
-            <PhoneMockup className="hidden md:block" size="500px" imageUrl="./jumbotron-phone-mockup2.png" />
-          </motion.div>
+        <section className="mt-6">
+          <div className="w-full max-w-md md:max-w-lg lg:max-w-3xl m-auto relative flex justify-center items-center">
+            <PhoneMockup
+              className="w-40 md:w-48 lg:w-72 absolute top-6 left-0"
+              imageUrl="./jumbotron-phone-mockup1.png"
+            />
+            <PhoneMockup
+              className="w-48 md:w-56 lg:w-80 z-10"
+              imageUrl="./phone-mockup.png"
+            />
+            <PhoneMockup
+              className="w-40 md:w-48 lg:w-72 absolute top-6 right-0"
+              imageUrl="./jumbotron-phone-mockup2.png"
+            />
+          </div>
         </section>
       </section>
-
     </>
   );
 }
