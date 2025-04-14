@@ -1,14 +1,14 @@
-import React from 'react';
+import React from "react";
 
 const variants = {
-  base: 'rounded-md px-6 py-2.5 text-sm',
+  base: "rounded-md px-6 py-2.5 text-sm",
   outline: {
-    blue: 'border border-blue-500 text-blue-500',
-    white: 'border border-white text-white',
+    blue: "border border-blue-500 text-blue-500",
+    white: "border border-white text-white",
   },
   fill: {
-    blue: 'bg-blue-500 text-white',
-    white: 'bg-white text-blue-500',
+    blue: "bg-blue-500 text-white",
+    white: "bg-white text-blue-500",
   },
 };
 
@@ -26,19 +26,22 @@ function buttonVariants(variant, color) {
     }
   });
 
-  return buttonStyle.join(' ');
+  return buttonStyle.join(" ");
 }
 
-function Button({ children: text = 'text', variant = 'fill', color = 'blue' }) {
+function Button({
+  children: text = "text",
+  variant = "fill",
+  color = "blue",
+  className = "",
+}) {
   return (
-    <div className="">
-      <button
-        type="button"
-        className={buttonVariants(variant, color)}
-      >
-        {text}
-      </button>
-    </div>
+    <button
+      type="button"
+      className={`${buttonVariants(variant, color)} ${className}`}
+    >
+      {text}
+    </button>
   );
 }
 
