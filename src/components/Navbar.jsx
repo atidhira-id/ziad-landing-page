@@ -7,7 +7,7 @@ import { IoLogoYoutube, IoLogoInstagram } from "react-icons/io";
 import Button from "./Button";
 
 function Navbar() {
-  const [isPhoneMenuOpen, setIsPhoneMenuOpen] = useState(true);
+  const [isPhoneMenuOpen, setIsPhoneMenuOpen] = useState(false);
 
   const links = [
     { link: "home", name: "Home" },
