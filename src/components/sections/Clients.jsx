@@ -1,24 +1,22 @@
 /* eslint-disable import/extensions */
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar } from 'swiper';
-import { SectionTitle } from '../Typography';
-import { clients } from '@/data/data';
-import ClientsSlideWrapper from '../ClientsSlideWrapper';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Scrollbar } from "swiper";
+import { SectionTitle } from "../Typography";
+import { clients } from "@/data/data";
+import ClientsSlideWrapper from "../ClientsSlideWrapper";
 
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 function Clients() {
-  const mapClientData = (start, end) => clients.slice(start, end).map((client) => client);
+  const mapClientData = (start, end) =>
+    clients.slice(start, end).map((client) => client);
 
   return (
-    <section className="relative w-full min-h-[75vh] h-max md:h-[90vh] mb-20">
-      {/* title */}
+    <section className="relative w-full max-w-7xl mx-auto mb-40 z-0">
       <SectionTitle>Sudah membantu 30+ Pesantren di Indonesia</SectionTitle>
-      {/* clients card */}
-      <section className="w-full h-full max-h-max mt:6 md:mt-12 flex flex-col justify-center items-center md:h-2/3 gap-8 md:px-24 z-20">
-        {/* row 1 */}
+      <section className="flex flex-col justify-center items-center">
         <Swiper
           modules={[Navigation, Pagination, Scrollbar]}
           scrollbar={{ draggable: true }}
@@ -26,15 +24,9 @@ function Clients() {
           slidesPerView={1}
           navigation
           pagination={{ clickable: true }}
-          style={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            width: '80vw',
-            maxWidth: '100vw',
-          }}
+          className="w-full flex justify-center items-center"
         >
-          <SwiperSlide>
+          <SwiperSlide className="pb-12">
             <ClientsSlideWrapper clients={mapClientData(0, 4)} />
           </SwiperSlide>
           <SwiperSlide>
@@ -59,11 +51,7 @@ function Clients() {
             <ClientsSlideWrapper clients={mapClientData(20, 24)} />
           </SwiperSlide>
         </Swiper>
-        {/* shadow */}
       </section>
-      <div className="absolute w-full top-0 bottom-0 flex items-center justify-center">
-        <div className="w-[900px] h-[400px] radial-gradient-shadow rounded-full blur-2xl -z-10" />
-      </div>
     </section>
   );
 }
