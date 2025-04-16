@@ -1,8 +1,12 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 
-function Title({ children: title = 'xl', size: className, align = 'text-center' }) {
+function Title({
+  children: title = "xl",
+  size: className,
+  align = "text-center",
+}) {
   return (
     <h1
       className={`${className} ${align} font-poppins font-bold text-gray-800 text-left`}
@@ -12,13 +16,13 @@ function Title({ children: title = 'xl', size: className, align = 'text-center' 
   );
 }
 
-function SectionTitle({ children: title, align = 'center' }) {
+function SectionTitle({ children: title, align = "center" }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: -50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.5 }}
-      viewport={{ once: false, margin: '-50px' }}
+      viewport={{ once: true, margin: "-50px" }}
       className="my-12 w-full"
     >
       <h1
