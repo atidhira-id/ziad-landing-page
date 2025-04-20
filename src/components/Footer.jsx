@@ -1,34 +1,54 @@
 /* eslint-disable max-len */
 /* eslint-disable @next/next/no-img-element */
-import React from 'react';
+import React from "react";
 
 function Footer() {
   return (
-    <footer className="w-full h-max md:mt-20 mb-10 md:mb-0 px-6 md:px-8 py-10 flex flex-col md:flex-row   justify-start items-center border-t border-gray-200">
-      {/* logo */}
-      <div className="mx-8">
-        <img src="./logo-ziad.png" alt="company logo" width="100px" height="auto" />
+    <footer className="w-full max-w-screen-2xl mt-20 border-t border-dashed border-gray-200">
+      <div className="w-full max-w-screen-xl mx-auto p-8 md:py-20 flex flex-col md:flex-row justify-start items-center md:gap-8">
+        <img src="./logo-ziad.png" alt="company logo" className="w-20" />
+
+        <aside className=" w-full mt-8 md:mt-0 flex flex-col md:flex-row justify-center md:justify-between gap-4 text-gray-600">
+          <div className="w-max">
+            <h3 className="font-semibold text-gray-900 text-lg">Contact</h3>
+            <p>
+              0877-7666-9010 (Tulus)
+              <br />
+              0895-3211-71701 (Regal)
+              <br />
+              ptmitracerdasnusantara@gmail.com
+            </p>
+          </div>
+          <div className="">
+            <h3 className="font-semibold text-gray-900 text-lg">Address</h3>
+            <p>
+              Jl. KH. Abdullah Syafei No. 1 (Tebet Utara Dalam 34) <br />
+              RT 05 RW 01, Tebet - Jakarta Selatan 12820
+            </p>
+          </div>
+          <div className="w-max">
+            <h3 className="font-semibold text-gray-900 text-lg">
+              Social Media
+            </h3>
+            <div className="flex flex-col">
+              <a
+                href="https://www.instagram.com/ziadsistem/"
+                target="_blank"
+                className="hover:underline"
+              >
+                Instagram
+              </a>
+              <a
+                href="https://www.youtube.com/@ptmitracerdasnusantara"
+                target="_blank"
+                className="hover:underline"
+              >
+                Youtube
+              </a>
+            </div>
+          </div>
+        </aside>
       </div>
-      {/* information */}
-      <aside className="w-full md:ml-8 flex flex-col md:flex-row justify-center items-start text-gray-500">
-        {/* contact info */}
-        <div className="mr-14">
-          <h3 className="font-poppins font-semibold text-gray-800">Contact</h3>
-          <p>
-            0877-7666-9010 (Tulus)
-            <br />
-            0895-3211-71701 (Regal)
-            <br />
-            ptmitracerdasnusantara@gmail.com
-          </p>
-        </div>
-        <div className="max-w-1/2 mt-4 md:mt-0">
-          <h3 className="font-poppins font-semibold text-gray-800">Address</h3>
-          <p>
-            Jl. KH. Abdullah Syafei No. 1 (Tebet Utara Dalam 34) Rt 05/ Rw 01, Tebet - Jakarta Selatan 12820
-          </p>
-        </div>
-      </aside>
     </footer>
   );
 }
