@@ -1,53 +1,45 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable react/react-in-jsx-scope */
 /* eslint-disable max-len */
-import { motion } from "framer-motion";
 import PhoneMockup from "../PhoneMockup";
 import { IoLogoYoutube } from "react-icons/io";
-import Button from "../Button";
+import { MdDownload } from "react-icons/md";
+import { SectionSubTitle } from "../Typography";
 
 function Jumbotron() {
   return (
     <>
-      {/* outer container */}
-      <section
-        className="w-full h-max pt-32 lg:pt-40 mb-16 flex flex-col gap-6"
-        id="home"
-      >
-        <section className="w-full flex flex-col items-center justify-center md:justify-start text-center gap-6 lg:gap-8">
-          <h1 className="text-3xl leading-snug sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-wide text-brand-title">
+      <section className="w-full pt-32 lg:pt-40 flex flex-col" id="home">
+        <section className="w-full flex flex-col items-center justify-center text-center">
+          <h1 className="text-3xl leading-snug sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-wide text-gray-900">
             Integrated System <br /> for Better <br /> School Management
           </h1>
-          <span className="text-base lg:text-lg w-3/4 max-w-3xl text-gray-600">
+          <SectionSubTitle className="px-4 my-8">
             Dukung kemajuan lembaga Anda dengan platform all-in-one: mulai dari
             manajemen siswa, pembayaran digital, e-learning, hingga komunikasi
             wali murid — semuanya dalam satu tempat.
-          </span>
-          <div className="w-3/4 flex flex-col sm:flex-row sm:justify-center gap-3 lg:gap-6">
-            <a href="#demo">
-              <Button
-                variant="fill"
-                color="blue"
-                className="w-full sm:w-max lg:text-lg py-4 shadow-md"
-              >
-                Download Ziad System
-              </Button>
+          </SectionSubTitle>
+          <div className="w-3/4 flex flex-col sm:flex-row sm:justify-center sm:my-12 gap-4 lg:gap-6">
+            <a
+              href="#demo"
+              className="w-full max-w-xs mx-auto sm:mx-0 px-2 py-3 border rounded-md flex justify-center items-center gap-2 bg-blue-500 text-white hover:bg-blue-600"
+            >
+              <MdDownload size={20} />
+              Download ZIAD
             </a>
-            <a href="#">
-              <Button
-                variant="fill"
-                color="white"
-                className="w-full lg:text-lg py-4 flex justify-center items-center gap-2 shadow-md"
-              >
-                <IoLogoYoutube size={18} />
-                Demo Aplikasi
-              </Button>
+            <a
+              href="https://www.youtube.com/@ptmitracerdasnusantara"
+              target="_blank"
+              className="w-full max-w-xs mx-auto sm:mx-0 px-2 py-3 border rounded-md flex justify-center items-center gap-2 hover:bg-gray-50"
+            >
+              <IoLogoYoutube size={20} className="text-brand-title" />
+              Demo Aplikasi
             </a>
           </div>
         </section>
 
         {/* apps screenshots */}
-        <section className="mt-6">
+        <section className="mt-8 md:mt-12">
           <div className="w-full max-w-md md:max-w-lg lg:max-w-3xl m-auto relative flex justify-center items-center">
             <PhoneMockup
               className="w-40 md:w-48 lg:w-72 absolute top-6 left-0"
