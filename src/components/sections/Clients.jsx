@@ -4,55 +4,53 @@ import { Navigation, Pagination, Scrollbar } from "swiper";
 import { SectionTitle } from "../Typography";
 import { clients } from "@/data/data";
 import ClientsSlideWrapper from "../ClientsSlideWrapper";
-
+import ClientsMarquee from "../ClientsMarquee";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 function Clients() {
-  const mapClientData = (start, end) =>
-    clients.slice(start, end).map((client) => client);
+  const sliceClients = (start, end) => clients.slice(start, end);
+
+  let clientSlides = [];
+
+  let start = 0;
+  while (start < clients.length) {
+    clientSlides.push(
+      <ClientsSlideWrapper clients={sliceClients(start, start + 4)} />
+    );
+    start += 4;
+  }
 
   return (
-    <section className="relative w-full max-w-7xl mx-auto mb-40 z-0">
-      <SectionTitle>Sudah membantu 30+ Pesantren di Indonesia</SectionTitle>
-      <section className="flex flex-col justify-center items-center">
-        <Swiper
-          modules={[Navigation, Pagination, Scrollbar]}
-          scrollbar={{ draggable: true }}
-          spaceBetween={100}
-          slidesPerView={1}
-          navigation
-          pagination={{ clickable: true }}
-          className="w-full flex justify-center items-center"
-        >
-          <SwiperSlide className="pb-12">
-            <ClientsSlideWrapper clients={mapClientData(0, 4)} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ClientsSlideWrapper clients={mapClientData(3, 7)} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ClientsSlideWrapper clients={mapClientData(6, 10)} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ClientsSlideWrapper clients={mapClientData(9, 13)} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ClientsSlideWrapper clients={mapClientData(11, 15)} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ClientsSlideWrapper clients={mapClientData(14, 18)} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ClientsSlideWrapper clients={mapClientData(17, 21)} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ClientsSlideWrapper clients={mapClientData(20, 24)} />
-          </SwiperSlide>
-        </Swiper>
+    <>
+      <section className="w-full relative max-w-7xl mx-auto z-0">
+        <ClientsMarquee />
+        <SectionTitle className="my-4 md:my-8 px-4">
+          Sudah membantu
+          <span className="text-brand-title"> 30+ Pesantren </span>
+          di Indonesia
+        </SectionTitle>
+        <section className="mt-8 md:mt-12 flex flex-col justify-center items-center">
+          <Swiper
+            modules={[Navigation, Pagination, Scrollbar]}
+            scrollbar={{ draggable: true }}
+            spaceBetween={100}
+            slidesPerView={1}
+            pagination={{ clickable: true }}
+            className="w-full flex justify-center items-center"
+          >
+            {clientSlides.map((slide, key) => {
+              return (
+                <SwiperSlide key={key} className="pb-12">
+                  {slide}
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
+        </section>
       </section>
-    </section>
+    </>
   );
 }
 
