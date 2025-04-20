@@ -9,22 +9,26 @@ import Products from "@/components/sections/Products";
 import DownloadDemo from "@/components/sections/DownloadDemo";
 import Pricing from "@/components/sections/Pricing";
 import FloatingContactButton from "@/components/FloatingContactButton";
-import ClientsMarquee from "@/components/ClientsMarquee";
+import Contact from "@/components/sections/Contact";
+import Testimonials from "@/components/sections/Testimonials";
 
 export default function Home() {
   return (
-    <main id="luxy" className="overflow-x-hidden max-w-scren">
-      <Navbar />
-      <Jumbotron />
-      <ClientsMarquee />
-      <Clients />
-      <Features />
-      <AboutUsQuotes />
-      <Products />
-      <DownloadDemo />
-      <Pricing />
-      <Footer />
-      <FloatingContactButton />
+    <main id="luxy" className="overflow-x-hidden max-w-screen bg-gray-50">
+      <div className="bg-white w-full max-w-screen-2xl mx-auto border-x border-gray-200">
+        <Navbar />
+        <Jumbotron />
+        <Clients />
+        <AboutUsQuotes />
+        <Features />
+        <Products />
+        <Pricing />
+        <DownloadDemo />
+        <Testimonials />
+        <Contact />
+        <Footer />
+        <FloatingContactButton />
+      </div>
     </main>
   );
 }
