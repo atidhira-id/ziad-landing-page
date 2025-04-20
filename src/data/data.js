@@ -1,141 +1,168 @@
 export const clients = [
   {
-    name: "Mthq",
-    logo: "./logo-mthq.webp",
+    name: "MTHQ",
+    logo: "./img-logo-pesantren/logo-mthq.webp",
   },
   {
     name: "Al Muhajirin",
-    logo: "./al-muhajirin.webp",
+    logo: "./img-logo-pesantren/al-muhajirin.webp",
   },
   {
     name: "Ponpes Modern Ay-yusufiah",
-    logo: "./logo-ponpes-modern.webp",
+    logo: "./img-logo-pesantren/logo-ponpes-modern.webp",
   },
   {
     name: "Tiara Aksara",
-    logo: "./logo-tiara-aksara.webp",
+    logo: "./img-logo-pesantren/logo-tiara-aksara.webp",
   },
   {
     name: "Daarel Qurro",
-    logo: "./logo-daarelqurro.webp",
+    logo: "./img-logo-pesantren/logo-daarelqurro.webp",
   },
   {
     name: "Daarul Hikmah",
-    logo: "./logo-darulhikmah.webp",
+    logo: "./img-logo-pesantren/logo-darulhikmah.webp",
   },
   {
     name: "Ay-Bahjah Cianjur",
-    logo: "./logo-albahjah-cianjur.webp",
+    logo: "./img-logo-pesantren/logo-albahjah-cianjur.webp",
   },
   {
     name: "SDP Asshiddiqiyah 2",
-    logo: "./logo-sdp.webp",
+    logo: "./img-logo-pesantren/logo-sdp.webp",
   },
   {
     name: "Shohibul Barokah",
-    logo: "./logo-shohibul-barokah.webp",
+    logo: "./img-logo-pesantren/logo-shohibul-barokah.webp",
   },
   {
     name: "Al Kautsar Bogor",
-    logo: "./logo-alkasmart.webp",
+    logo: "./img-logo-pesantren/logo-alkasmart.webp",
   },
   {
-    name: "Amal ulummah",
-    logo: "./logo-amalulummah.webp",
+    name: "Amal Ulummah",
+    logo: "./img-logo-pesantren/logo-amalulummah.webp",
   },
   {
     name: "Imumahabbah",
-    logo: "./logo-imumahabbah.webp",
+    logo: "./img-logo-pesantren/logo-imumahabbah.webp",
   },
   {
     name: "Khadijah Islamic School",
-    logo: "./logo-khadijah.webp",
+    logo: "./img-logo-pesantren/logo-khadijah.webp",
   },
   {
-    name: "Madinah Al hijrah",
-    logo: "./logo-madinah.webp",
+    name: "Madinah Al Hijrah",
+    logo: "./img-logo-pesantren/logo-madinah.webp",
   },
   {
     name: "Al Bayyinah",
-    logo: "./logo-albayyinah.webp",
+    logo: "./img-logo-pesantren/logo-albayyinah.webp",
   },
   {
     name: "Al Hasyimiyah",
-    logo: "./logo-alhasyimiyah.webp",
+    logo: "./img-logo-pesantren/logo-alhasyimiyah.webp",
   },
   {
     name: "Al Kautsar Banjar",
-    logo: "./logo-alkautsar-banjar.webp",
+    logo: "./img-logo-pesantren/logo-alkautsar-banjar.webp",
   },
   {
     name: "Al Wasilah",
-    logo: "./logo-alwasilah.webp",
+    logo: "./img-logo-pesantren/logo-alwasilah.webp",
   },
   {
     name: "Azma",
-    logo: "./logo-azma.webp",
+    logo: "./img-logo-pesantren/logo-azma.webp",
   },
   {
     name: "Binka",
-    logo: "./logo-binka.webp",
+    logo: "./img-logo-pesantren/logo-binka.webp",
   },
   {
     name: "Essulam",
-    logo: "./logo-essulam.webp",
+    logo: "./img-logo-pesantren/logo-essulam.webp",
   },
   {
     name: "Fajrul Karim",
-    logo: "./logo-fajrul-karim.webp",
+    logo: "./img-logo-pesantren/logo-fajrul-karim.webp",
   },
   {
     name: "Imumahabbah",
-    logo: "./logo-imumahabbah.webp",
+    logo: "./img-logo-pesantren/logo-imumahabbah.webp",
   },
   {
     name: "Kebun Tumbuh",
-    logo: "./logo-kebun-tumbuh.webp",
+    logo: "./img-logo-pesantren/logo-kebun-tumbuh.webp",
   },
 ];
 
 export const features = [
   {
-    title: "Otomasi pembayaran",
-    imageUrl: "./payment-icon.png",
-    desc: "memudahkan penerimaan pembayaran dan memudahkan wali santri membayar tagihan",
+    title: "Otomasi Pembayaran",
+    imageUrl: "./img-features/payment-icon.png",
+    desc: "Memudahkan penerimaan pembayaran dan memudahkan wali santri membayar tagihan",
   },
   {
     title: "Aplikasi Android",
-    imageUrl: "./file-icon.png",
-    desc: "setiap pesantren kami buatkan aplikasi android khusus yang memudahkan wali santri dan meningkatkan reputasi pesantren",
+    imageUrl: "./img-features/file-icon.png",
+    desc: "Aplikasi android khusus untuk setiap pesantren yang memudahkan wali santri dan meningkatkan reputasi pesantren",
   },
   {
     title: "Absensi Terintegrasi",
-    imageUrl: "./file-icon.png",
-    desc: "memudahkan memantau keaktifan guru dan santri",
+    imageUrl: "./img-features/file-icon.png",
+    desc: "Memudahkan memantau keaktifan guru dan santri",
   },
   {
     title: "Keuangan",
-    imageUrl: "./dollar-icon.png",
-    desc: "mengelola keuangan agar data rapi dan mengurangi kesalahan pencatatan",
+    imageUrl: "./img-features/dollar-icon.png",
+    desc: "Mempermudah pengelolaan keuangan untuk mengurangi kesalahan pencatatan",
   },
   {
     title: "Sistem Nilai",
-    imageUrl: "./pencil-icon.png",
-    desc: "digitalisasi nilai mengurangi penggunaan kertas dan memudahkan akses nilai santri",
+    imageUrl: "./img-features/pencil-icon.png",
+    desc: "Digitalisasi nilai mengurangi penggunaan kertas dan memudahkan akses nilai santri",
   },
   {
     title: "Smart Card",
-    imageUrl: "./card-icon.png",
-    desc: "kartu multifungsi yang dapat memudahkan semua kegiatan pesantren dan sekolah islam",
+    imageUrl: "./img-features/card-icon.png",
+    desc: "Kartu multifungsi yang dapat memudahkan semua kegiatan Pesantren dan Sekolah Islam",
   },
   {
     title: "Administrasi",
-    imageUrl: "./file-icon.png",
-    desc: "mengelola seluruh data agar mudah diakses dan dibagikan",
+    imageUrl: "./img-features/file-icon.png",
+    desc: "Mengelola seluruh data agar mudah diakses dan dibagikan",
   },
   {
     title: "Tabungan",
-    imageUrl: "./money-icon.png",
-    desc: "tidak perlu lagi menggunakan buku tabungan yang dicatat manual",
+    imageUrl: "./img-features/money-icon.png",
+    desc: "Tidak perlu lagi menggunakan buku tabungan yang dicatat manual",
+  },
+];
+
+export const testimonials = [
+  {
+    imgUrl: "./img-dokumentasi/Ibadurrahman_Cileungsi/1.webp",
+    name: "Pondok Pesantren Ibadurrahman Cileungsi",
+    testimony:
+      "Ziad menyederhanakan administrasi dan meningkatkan kolaborasi antara guru dan orangtua.",
+  },
+  {
+    imgUrl: "./img-dokumentasi/Permata_Ihsan/1.webp",
+    name: "Pondok Pesantren Permata Ihsan",
+    testimony:
+      "Ziad menyederhanakan administrasi dan meningkatkan kolaborasi antara guru dan orangtua.",
+  },
+  {
+    imgUrl: "./img-dokumentasi/Annihayah/1.webp",
+    name: "Pondok Pesantren Annihayah",
+    testimony:
+      "Ziad menyederhanakan administrasi dan meningkatkan kolaborasi antara guru dan orangtua.",
+  },
+  {
+    imgUrl: "./img-dokumentasi/Raudhatut_Tauhid/1.webp",
+    name: "Pondok Pesantren Raudhatut Tauhid",
+    testimony:
+      "Ziad menyederhanakan administrasi dan meningkatkan kolaborasi antara guru dan orangtua.",
   },
 ];
