@@ -19,7 +19,7 @@ function CheckIcon({ size = 36, color = "white" }) {
   );
 }
 
-function HamburgerIcon({ size = 36, color = "white" }) {
+function HamburgerIcon({ size = 36, color = "#1D77FF" }) {
   return (
     <>
       <svg
