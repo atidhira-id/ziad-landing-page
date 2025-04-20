@@ -1,30 +1,25 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable react/self-closing-comp */
-import { motion } from 'framer-motion';
 
-function CardFeatures({ children: desc, title = 'title', imageUrl }) {
+function CardFeatures({ children: desc, title = "title", imageUrl }) {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: -50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ ease: 'easeInOut', delay: 0.3 }}
-      className="flex items-center justify-center bg-white"
-    >
-      <div className="w-72 h-80 max-h-max px-4 pb-4 pt-8 flex flex-col items-center justify-center shadow-lg rounded-lg">
-        {/* title */}
-        <h3 className="w-fit mb-3 font-poppins font-bold text-xl text-blue-600 text-center">{title}</h3>
+    <div className="flex items-center justify-center bg-white">
+      <div className="w-64 h-64 lg:w-72 lg:h-72 px-4 py-6 flex flex-col items-center justify-center gap-2 rounded-3xl border border-gray-300">
         {/* image */}
-        {/* <div className="w-16 h-16 bg-blue-500 mb-8"></div> */}
-        <img src={imageUrl} alt="feature-image" width="100px" height="auto" className="mb-5" />
+        <img src={imageUrl} alt="feature-image" className="w-20 " />
+        {/* title */}
+        <h3 className="w-fit font-bold text-xl text-blue-600 text-center">
+          {title}
+        </h3>
         {/* desc */}
         <div className="grow">
-          <p className="w-full text-center text-gray-500">
+          <p className="w-full text-sm md:text-base text-center text-gray-600">
             {desc}
           </p>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }
 
