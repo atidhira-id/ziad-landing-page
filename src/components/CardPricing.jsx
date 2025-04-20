@@ -1,101 +1,88 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import React from 'react';
-import Link from 'next/link';
-import { motion } from 'framer-motion';
-import Button from './Button';
-import { CheckIcon } from './Icons';
+import React from "react";
+import Button from "./Button";
+import { CheckIcon } from "./Icons";
 
-function CardPricing({
-  type, shortDesc, desc, price, name, discount,
-}) {
-  if (type === 'primary') {
+function CardPricing({ type, shortDesc, desc, price, name, discount }) {
+  if (type === "primary") {
     return (
-      <motion.div
-        initial={{ opacity: 0, y: -100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.4 }}
-        viewport={{ once: true, margin: '100px' }}
-        className="min-h-[45vh] md:min-h-[75vh] max-h-max flex flex-col items-center px-10 py-10 bg-brand rounded-lg shadow-xl"
-      >
-        <article className="mb-9 flex flex-col items-center justify-center">
+      <div className="w-72 h-[540px] flex flex-col items-center px-8 pt-4 pb-6 bg-brand rounded-lg gap-4 border border-blue-200">
+        <div className="basis-1/3 flex flex-col items-center justify-center gap-2">
           {/* desc */}
-          <span className="mb-3 font-light text-xs text-center text-white opacity-75 uppercase">
+          <span className="font-light text-xs text-center uppercase text-white">
             {name}
           </span>
           {/* price */}
-          <h1 className="text-4xl font-bold font-poppins text-white mb-3">
-            {`Rp${price}K`}
-          </h1>
-          {/* add on desc */}
-          <span className="w-3/4 font-light text-xs text-center text-gray-200 opacity-75">
+          <h1 className="text-4xl font-bold text-white">{`Rp ${price}K`}</h1>
+          {/* desc */}
+          <span className="w-3/4 font-light text-xs text-center text-gray-200">
             {shortDesc}
           </span>
-        </article>
-        <ul className="grow w-full flex flex-col items-start justify-start md:items-center text-left">
-          {desc && desc.map((dsc) => (
-            <li key={dsc} className="w-full text-sm text-white mb-3 flex items-center gap-2">
-              <CheckIcon size={16} />
-              <span>
-                {dsc}
-              </span>
-            </li>
-          ))}
+        </div>
+
+        <ul className="grow w-full flex flex-col items-start justify-start text-left gap-3">
+          {desc &&
+            desc.map((dsc, key) => (
+              <li
+                key={key}
+                className="w-full text-sm text-white flex items-center gap-2"
+              >
+                <CheckIcon size={16} />
+                <span>{dsc}</span>
+              </li>
+            ))}
         </ul>
-        <Link href="http://wa.me/6287776669010">
-          <Button variant="fill" color="white">Langganan</Button>
-        </Link>
-      </motion.div>
+
+        <a href="http://wa.me/6287776669010" target="_blank" className="w-full">
+          <Button variant="fill" color="white" className="w-full">
+            Langganan
+          </Button>
+        </a>
+      </div>
     );
   }
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 100 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.4 }}
-      viewport={{ once: true, margin: '100px' }}
-      className="min-h-[45vh] md:min-h-[75vh] min-w-[20rem] max-h-max flex flex-col items-center px-7 py-8 bg-white rounded-lg shadow-xl"
-    >
-      <article className="mb-9 flex flex-col items-center justify-center">
+    <div className="w-72 h-[540px] flex flex-col items-center px-8 pt-4 pb-6 bg-white rounded-lg gap-4 border border-blue-200">
+      <div className="basis-1/3 flex flex-col items-center justify-center gap-2">
         {/* desc */}
-        <span className="mb-3 font-light text-xs text-center text-gray-700 opacity-75 uppercase">
+        <span className="font-light text-xs text-center uppercase text-gray-700">
           {name}
         </span>
         {/* price */}
-        <h1 className="text-4xl font-bold font-poppins text-brand mb-3">
+        <h1 className="text-4xl font-bold text-brand">
           {discount ? (
             <>
-              <span className="line-through">{`Rp${price}K `}</span>
+              <span className="line-through">{`Rp ${price}K `}</span>
               {`${discount}K`}
             </>
           ) : (
-            // eslint-disable-next-line react/jsx-no-useless-fragment
-            <>
-              {`Rp${price}K`}
-            </>
+            <>{`Rp ${price}K`}</>
           )}
         </h1>
         {/* add on desc */}
-        <span className="w-3/4 font-light text-xs text-center text-gray-600 opacity-75">
+        <span className="w-3/4 font-light text-xs text-center text-gray-600">
           {shortDesc}
-          {/* eslint-disable-next-line react/no-unescaped-entities */}
-          output: 'export',
         </span>
-      </article>
-      <ul className="grow w-full flex flex-col items-start justify-start text-left md:items-center">
-        {desc && desc.map((dsc) => (
-          <li key={dsc} className="w-full text-sm text-gray-700 mb-3 flex items-center gap-2">
-            <CheckIcon size={16} color="#1C77FF" />
-            <span>
-              {dsc}
-            </span>
-          </li>
-        ))}
+      </div>
+      <ul className="grow w-full flex flex-col items-start justify-start text-left gap-3">
+        {desc &&
+          desc.map((dsc) => (
+            <li
+              key={dsc}
+              className="w-full text-sm text-gray-700 flex items-center gap-2"
+            >
+              <CheckIcon size={16} color="#1C77FF" />
+              <span>{dsc}</span>
+            </li>
+          ))}
       </ul>
-      <Link href="http://wa.me/6287776669010">
-        <Button variant="fill" color="blue">Langganan</Button>
-      </Link>
-    </motion.div>
+      <a href="http://wa.me/6287776669010" target="_blank" className="w-full">
+        <Button variant="fill" color="blue" className="w-full">
+          Langganan
+        </Button>
+      </a>
+    </div>
   );
 }
 
