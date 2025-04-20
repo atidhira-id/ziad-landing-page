@@ -23,41 +23,40 @@ function Navbar() {
   return (
     <>
       {/* Desktop Navigation */}
-      <div className="linear-secondary hidden w-full md:flex md:fixed z-40">
-        <nav className="w-full h-16 max-w-screen-xl mx-auto px-6 md:flex items-center justify-between">
+      <div className="hidden w-full max-w-screen-2xl md:flex md:fixed border-b border-gray-300 border-dashed z-40 box-content">
+        <nav className="bg-white w-full h-16 max-w-screen-xl mx-auto px-6 md:flex items-center justify-between">
           {/* logo */}
           <div className="block">
-            <h1 className="font-open-sans font-bold text-2xl text-white">
+            <h1 className="font-open-sans font-bold text-2xl text-brand">
               ZIAD
             </h1>
           </div>
           {/* navbar links */}
-          <div className="grow flex flex-row items-center justify-center gap-8 lg:gap-10">
+          <div className="grow flex flex-row items-center justify-center gap-4">
             {links.map((link, key) => {
               return (
                 <a
                   href={`#${link.link}`}
                   key={key}
-                  className="font-regular text-base lg:text-lg text-white tracking-wider opacity-80 hover:opacity-100"
+                  className="text-sm px-2 py-1 rounded-sm hover:bg-gray-100 duration-200"
                 >
                   {link.name}
                 </a>
               );
             })}
           </div>
-          <div className="block">
-            <a href="#demo" className="block">
-              <Button variant="fill" color="white">
-                Coba Aplikasi
-              </Button>
-            </a>
-          </div>
+          <a
+            href="#demo"
+            className="py-2 px-3 text-sm rounded-full border border-dashed border-gray-400 hover:bg-gray-100 duration-200"
+          >
+            Coba Aplikasi
+          </a>
         </nav>
       </div>
       {/* Mobile Navigation */}
-      <nav className="md:hidden fixed top-0 w-full bg-brand flex justify-between items-center py-4 px-10 z-40">
+      <nav className="md:hidden bg-white fixed top-0 w-full flex justify-between items-center py-4 px-10 border-b border-dashed z-40">
         <div className="md:block">
-          <h1 className="font-open-sans font-bold text-xl text-white">ZIAD</h1>
+          <h1 className="font-open-sans font-bold text-xl text-brand">ZIAD</h1>
         </div>
         <button
           type="button"
