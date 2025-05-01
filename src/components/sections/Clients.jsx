@@ -38,7 +38,7 @@ function Clients() {
             spaceBetween={100}
             slidesPerView={1}
             pagination={{ clickable: true }}
-            className="w-full flex justify-center items-center"
+            className="w-full flex justify-center items-center cursor-grab"
           >
             {clientSlides.map((slide, key) => {
               return (
