@@ -27,7 +27,6 @@ function Pricing() {
           name="Bulanan"
           shortDesc="Per Siswa Aktif"
           price="15"
-          discount="12"
           desc={[
             "Dapat semua fitur",
             "Bebas biaya registrasi",
