@@ -10,7 +10,6 @@ import { SectionTitle } from "../Typography";
 import FeatureSlideWrapper from "../FeatureSlideSwapper";
 import CardFeatures from "../CardFeatures";
 import CardOtherFeatures from "../CardOtherFeatures";
-import Image from "next/image";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -86,7 +85,7 @@ function Features() {
       <section className="w-5/6 max-w-7xl mx-auto py-4 flex flex-col justify-center items-center rounded-2xl bg-gray-50">
         <div className="w-full flex flex-col lg:flex-row items-center justify-center p-4">
           <div className="lg:basis-1/2">
-            <Image
+            <img
               src="./dashboard-image.png"
               alt="phone-image-apps"
               height={600}
