@@ -54,3 +54,13 @@ h6 {
     rgba(0, 0, 0, 0)
   );
 }
+
+.sliderGradient2 {
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 8%,
+    rgba(0, 0, 0, 1) 92%,
+    rgba(0, 0, 0, 0)
+  );
+}
