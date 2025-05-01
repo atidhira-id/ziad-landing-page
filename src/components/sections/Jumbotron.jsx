@@ -11,8 +11,12 @@ function Jumbotron() {
     <>
       <section className="w-full pt-32 lg:pt-40 flex flex-col" id="home">
         <section className="w-full flex flex-col items-center justify-center text-center">
-          <h1 className="text-3xl leading-snug sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-wide text-gray-900">
-            Integrated System <br /> for Better <br /> School Management
+          <h1 className="text-3xl leading-snug sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-wide text-gray-900">
+            <span className="text-brand font-extrabold leading-relaxed">
+              ZIAD
+            </span>
+            <br />
+            Sahabat Digitalisasi Pesantren
           </h1>
           <SectionSubTitle className="px-4 my-8">
             Dukung kemajuan lembaga Anda dengan platform all-in-one: mulai dari
@@ -21,11 +25,12 @@ function Jumbotron() {
           </SectionSubTitle>
           <div className="w-3/4 flex flex-col sm:flex-row sm:justify-center sm:my-12 gap-4 lg:gap-6">
             <a
-              href="#demo"
+              href="./brosur-ziad.pdf"
+              download
               className="w-full max-w-xs mx-auto sm:mx-0 px-2 py-3 border rounded-md flex justify-center items-center gap-2 bg-blue-500 text-white hover:bg-blue-600"
             >
               <MdDownload size={20} />
-              Download ZIAD
+              Download Brosur
             </a>
             <a
               href="https://www.youtube.com/@ptmitracerdasnusantara"
