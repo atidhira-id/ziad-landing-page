@@ -1,6 +1,5 @@
 /* eslint-disable max-len */
 import React from "react";
-import Image from "next/image";
 
 function AboutUsQuotes() {
   return (
@@ -10,7 +9,7 @@ function AboutUsQuotes() {
         <a href="http://www.freepik.com" className="hidden">
           Designed by vectorjuice / Freepik
         </a>
-        <Image
+        <img
           src="./islamic-school-vector.jpg"
           height={600}
           width={600}
