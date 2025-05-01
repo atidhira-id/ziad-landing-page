@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { CloseIcon, HamburgerIcon, ArrowRightIcon } from "./Icons";
 import { IoLogoYoutube, IoLogoInstagram } from "react-icons/io";
+import { AiFillTikTok } from "react-icons/ai";
 import Button from "./Button";
 
 function Navbar() {
@@ -23,14 +24,12 @@ function Navbar() {
   return (
     <>
       {/* Desktop Navigation */}
-      <div className="hidden w-full max-w-screen-2xl md:flex md:fixed border-b border-gray-300 border-dashed z-40 box-content">
+      <div className="hidden bg-white w-full max-w-screen-2xl md:flex md:fixed border-b border-gray-300 border-dashed z-40 box-content">
         <nav className="bg-white w-full h-16 max-w-screen-xl mx-auto px-6 md:flex items-center justify-between">
           {/* logo */}
-          <div className="block">
-            <h1 className="font-open-sans font-bold text-2xl text-brand">
-              ZIAD
-            </h1>
-          </div>
+          <a href="#home" className="block">
+            <img src="./logo-ziad.png" className="w-12 h-12 object-contain" />
+          </a>
           {/* navbar links */}
           <div className="grow flex flex-row items-center justify-center gap-4">
             {links.map((link, key) => {
@@ -55,9 +54,9 @@ function Navbar() {
       </div>
       {/* Mobile Navigation */}
       <nav className="md:hidden bg-white fixed top-0 w-full flex justify-between items-center py-4 px-10 border-b border-dashed z-40">
-        <div className="md:block">
-          <h1 className="font-open-sans font-bold text-xl text-brand">ZIAD</h1>
-        </div>
+        <a href="#home" className="md:block">
+          <img src="./logo-ziad.png" className="w-12 h-12 object-contain" />
+        </a>
         <button
           type="button"
           className="md:hidden -scale-x-100"
@@ -78,7 +77,7 @@ function Navbar() {
             className="fixed top-0 left-0 w-screen bottom-0 h-screen md:hidden z-40 origin-top-right overflow-hidden"
           >
             {/* Mobile menu */}
-            <div className="grow w-full h-screen px-10 pt-4 pb-10 bg-brand flex flex-col md:flex-row items-end justify-center font-regular text-sm text-white">
+            <div className="grow w-full h-screen px-10 pt-4 pb-10 bg-blue-700 flex flex-col md:flex-row items-end justify-center font-regular text-sm text-white">
               {/* Close button */}
               <button type="button" onClick={togglePhoneMenu}>
                 <CloseIcon />
@@ -109,7 +108,7 @@ function Navbar() {
                       </p>
                     </Button>
                   </a>
-                  <p className="text-sm">Tap. Download. Enjoy!</p>
+                  <p className="text-sm">Nikmati Fiturnya!</p>
                 </div>
                 <div className="flex justify-between items-center w-full">
                   <p className="text-lg tracking-wider font-bold">
@@ -120,13 +119,19 @@ function Navbar() {
                       href="https://www.youtube.com/@ptmitracerdasnusantara"
                       target="_blank"
                     >
-                      <IoLogoYoutube size={36} />
+                      <IoLogoYoutube size={30} />
                     </a>
                     <a
                       href="https://www.instagram.com/ziadsistem/"
                       target="_blank"
                     >
-                      <IoLogoInstagram size={36} />
+                      <IoLogoInstagram size={30} />
+                    </a>
+                    <a
+                      href="https://www.instagram.com/ziadsistem/"
+                      target="_blank"
+                    >
+                      <AiFillTikTok size={30} />
                     </a>
                   </div>
                 </div>
