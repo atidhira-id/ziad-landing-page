@@ -45,6 +45,13 @@ function Footer() {
               >
                 Youtube
               </a>
+              <a
+                href="https://www.youtube.com/@ptmitracerdasnusantara"
+                target="_blank"
+                className="hover:underline"
+              >
+                Tiktok
+              </a>
             </div>
           </div>
         </aside>
