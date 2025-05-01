@@ -9,7 +9,7 @@ module.exports = {
         poppins: ["Poppins", "sans-serif"],
       },
       colors: {
-        brand: "#1D77FF",
+        brand: "#000CFE",
         "brand-title": "#1C7AFD",
         "brand-text": "#46556C",
       },
