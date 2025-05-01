@@ -7,7 +7,7 @@ import { SectionTitle } from "../Typography";
 function Products() {
   return (
     <section className="w-full max-w-7xl mx-auto pt-20 z-0" id="product">
-      <SectionTitle className="mb-8 md:mb-12">Produk Unggulan</SectionTitle>
+      <SectionTitle className="mb-8 md:mb-12">Teknologi Unggulan</SectionTitle>
       <section className="w-full flex flex-col justify-center items-center gap-8">
         <ProductShowcase
           title={
