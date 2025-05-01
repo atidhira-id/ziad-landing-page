@@ -6,7 +6,7 @@ import { CheckIcon } from "./Icons";
 function CardPricing({ type, shortDesc, desc, price, name, discount }) {
   if (type === "primary") {
     return (
-      <div className="w-72 h-[540px] flex flex-col items-center px-8 pt-4 pb-6 bg-brand rounded-lg gap-4 border border-blue-200">
+      <div className="w-72 h-[540px] flex flex-col items-center px-8 pt-4 pb-6 bg-blue-700 rounded-lg gap-4 border border-blue-200">
         <div className="basis-1/3 flex flex-col items-center justify-center gap-2">
           {/* desc */}
           <span className="font-light text-xs text-center uppercase text-white">
@@ -34,7 +34,10 @@ function CardPricing({ type, shortDesc, desc, price, name, discount }) {
         </ul>
 
         <a href="http://wa.me/6287776669010" target="_blank" className="w-full">
-          <Button variant="fill" color="white" className="w-full">
+          <Button
+            variant="fill"
+            className="w-full bg-white hover:bg-blue-50 !text-blue-700 font-bold uppercase"
+          >
             Langganan
           </Button>
         </a>
@@ -50,7 +53,7 @@ function CardPricing({ type, shortDesc, desc, price, name, discount }) {
           {name}
         </span>
         {/* price */}
-        <h1 className="text-4xl font-bold text-brand">
+        <h1 className="text-4xl font-bold text-blue-700">
           {discount ? (
             <>
               <span className="line-through">{`Rp ${price}K `}</span>
@@ -78,7 +81,10 @@ function CardPricing({ type, shortDesc, desc, price, name, discount }) {
           ))}
       </ul>
       <a href="http://wa.me/6287776669010" target="_blank" className="w-full">
-        <Button variant="fill" color="blue" className="w-full">
+        <Button
+          variant="fill"
+          className="w-full bg-blue-600 hover:bg-blue-700 !text-white font-bold uppercase"
+        >
           Langganan
         </Button>
       </a>
