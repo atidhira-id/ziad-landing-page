@@ -142,27 +142,33 @@ export const features = [
 
 export const testimonials = [
   {
-    imgUrl: "./img-dokumentasi/Ibadurrahman_Cileungsi/1.webp",
+    imgUrl: "./img-dokumentasi/Ibadurrahman_Cileungsi/2.webp",
     name: "Pondok Pesantren Ibadurrahman Cileungsi",
     testimony:
-      "Ziad menyederhanakan administrasi dan meningkatkan kolaborasi antara guru dan orangtua.",
+      "Tim Ziad memperkenalkan fitur-fitur aplikasi kepada santri dan santriwati di Pesantren Ibadurrahman Cileungsi. Demo interaktif ini menunjukkan cara mudah memanajemen siswa, pembayaran digital, e-learning, hingga komunikasi wali murid — semuanya dalam satu tempat.",
+  },
+  {
+    imgUrl: "./img-dokumentasi/Ibadurrahman_Cileungsi/6.webp",
+    name: "Pondok Pesantren Ibadurrahman Cileungsi",
+    testimony:
+      "Tim Ziad mendemonstrasikan penggunaan Smart Reader IoT untuk membaca barcode pada sebuah produk. Kegiatan ini bertujuan untuk memperkenalkan teknologi IoT yang dapat membantu proses identifikasi produk secara otomatis dan efisien.",
   },
   {
     imgUrl: "./img-dokumentasi/Permata_Ihsan/1.webp",
     name: "Pondok Pesantren Permata Ihsan",
-    testimony:
-      "Ziad menyederhanakan administrasi dan meningkatkan kolaborasi antara guru dan orangtua.",
+    testimony: "Foto bersama dengan pihak Pondok Pesantren Permata Ihsan",
   },
   {
     imgUrl: "./img-dokumentasi/Annihayah/1.webp",
     name: "Pondok Pesantren Annihayah",
-    testimony:
-      "Ziad menyederhanakan administrasi dan meningkatkan kolaborasi antara guru dan orangtua.",
+    testimony: "Foto bersama dengan pihak Pondok Pesantren Annihayah",
   },
   {
     imgUrl: "./img-dokumentasi/Raudhatut_Tauhid/1.webp",
     name: "Pondok Pesantren Raudhatut Tauhid",
-    testimony:
-      "Ziad menyederhanakan administrasi dan meningkatkan kolaborasi antara guru dan orangtua.",
+    testimony: "Foto bersama dengan pihak Pondok Pesantren Raudhatut Tauhid",
   },
 ];
+
+export const whatsappTemplateText = `Assalamualaikum Wr. Wb
+Permisi admin, saya ingin menanyakan tentang`;
