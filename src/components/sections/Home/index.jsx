@@ -1,17 +1,15 @@
-/* eslint-disable import/no-extraneous-dependencies */
-/* eslint-disable react/react-in-jsx-scope */
-/* eslint-disable max-len */
-import PhoneMockup from "../PhoneMockup";
+import PhoneMockup from "@/components/sections/Home/PhoneMockup";
 import { IoLogoYoutube } from "react-icons/io";
 import { MdDownload } from "react-icons/md";
-import { SectionSubTitle } from "../Typography";
+import { SectionSubTitle } from "@/components/Typography";
+import { Button } from "@/components/Button";
 
-function Jumbotron() {
+function Home() {
   return (
     <>
-      <section className="w-full pt-32 lg:pt-40 flex flex-col" id="home">
+      <section className="w-full pt-40 flex flex-col" id="home">
         <section className="w-full flex flex-col items-center justify-center text-center">
-          <h1 className="text-3xl leading-snug sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-wide text-gray-900">
+          <h1 className="text-3xl leading-snug sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-wide text-gray-900 px-4">
             <span className="text-brand font-extrabold leading-relaxed">
               ZIAD
             </span>
@@ -27,23 +25,32 @@ function Jumbotron() {
             <a
               href="./brosur-ziad.pdf"
               download
-              className="w-full max-w-xs mx-auto sm:mx-0 px-2 py-3 border rounded-md flex justify-center items-center gap-2 bg-blue-500 text-white hover:bg-blue-600"
+              className="w-full max-w-xs mx-auto sm:mx-0"
             >
-              <MdDownload size={20} />
-              Download Brosur
+              <Button
+                theme="blue"
+                className="w-full max-w-xs px-2 py-3 justify-center items-center gap-2"
+              >
+                <MdDownload size={20} />
+                Download Brosur
+              </Button>
             </a>
             <a
               href="https://www.youtube.com/@ptmitracerdasnusantara"
               target="_blank"
-              className="w-full max-w-xs mx-auto sm:mx-0 px-2 py-3 border rounded-md flex justify-center items-center gap-2 hover:bg-gray-50"
+              className="w-full max-w-xs mx-auto sm:mx-0"
             >
-              <IoLogoYoutube size={20} className="text-brand-title" />
-              Demo Aplikasi
+              <Button
+                theme="white"
+                className="w-full max-w-xs px-2 py-3 justify-center items-center gap-2"
+              >
+                <IoLogoYoutube size={20} />
+                Lihat Demo
+              </Button>
             </a>
           </div>
         </section>
 
-        {/* apps screenshots */}
         <section className="mt-8 md:mt-12">
           <div className="w-full max-w-md md:max-w-lg lg:max-w-3xl m-auto relative flex justify-center items-center">
             <PhoneMockup
@@ -65,4 +72,4 @@ function Jumbotron() {
   );
 }
 
-export default Jumbotron;
+export default Home;
