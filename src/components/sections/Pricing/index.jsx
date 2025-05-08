@@ -1,10 +1,11 @@
 import React from "react";
-import CardPricing from "../CardPricing";
-import { SectionTitle } from "../Typography";
+import CardPricing from "@/components/sections/Pricing/CardPricing";
+import { SectionTitle } from "@/components/Typography";
+import { SectionContainer } from "@/components/Containers";
 
 function Pricing() {
   return (
-    <section className="w-5/6 max-w-7xl mx-auto pt-20">
+    <SectionContainer className="pt-40">
       <SectionTitle className="mb-8 md:mb-12">
         Mulai Gunakan Sistem Kami
       </SectionTitle>
@@ -60,7 +61,7 @@ function Pricing() {
           ]}
         />
       </section>
-    </section>
+    </SectionContainer>
   );
 }
 
