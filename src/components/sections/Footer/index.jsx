@@ -1,5 +1,3 @@
-/* eslint-disable max-len */
-/* eslint-disable @next/next/no-img-element */
 import React from "react";
 
 function Footer() {
