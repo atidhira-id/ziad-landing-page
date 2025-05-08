@@ -140,33 +140,50 @@ export const features = [
   },
 ];
 
-export const testimonials = [
+export const documentations = [
   {
     imgUrl: "./img-dokumentasi/Ibadurrahman_Cileungsi/2.webp",
     name: "Pondok Pesantren Ibadurrahman Cileungsi",
-    testimony:
-      "Tim Ziad memperkenalkan fitur-fitur aplikasi kepada santri dan santriwati di Pesantren Ibadurrahman Cileungsi. Demo interaktif ini menunjukkan cara mudah memanajemen siswa, pembayaran digital, e-learning, hingga komunikasi wali murid — semuanya dalam satu tempat.",
+    desc: "Tim Ziad memperkenalkan fitur-fitur aplikasi kepada santri dan santriwati di Pesantren Ibadurrahman Cileungsi. Demo interaktif ini menunjukkan cara mudah memanajemen siswa, pembayaran digital, e-learning, hingga komunikasi wali murid — semuanya dalam satu tempat.",
   },
   {
     imgUrl: "./img-dokumentasi/Ibadurrahman_Cileungsi/6.webp",
     name: "Pondok Pesantren Ibadurrahman Cileungsi",
-    testimony:
-      "Tim Ziad mendemonstrasikan penggunaan Smart Reader IoT untuk membaca barcode pada sebuah produk. Kegiatan ini bertujuan untuk memperkenalkan teknologi IoT yang dapat membantu proses identifikasi produk secara otomatis dan efisien.",
+    desc: "Tim Ziad mendemonstrasikan penggunaan Smart Reader IoT untuk membaca barcode pada sebuah produk. Kegiatan ini bertujuan untuk memperkenalkan teknologi IoT yang dapat membantu proses identifikasi produk secara otomatis dan efisien.",
   },
   {
     imgUrl: "./img-dokumentasi/Permata_Ihsan/1.webp",
     name: "Pondok Pesantren Permata Ihsan",
-    testimony: "Foto bersama dengan pihak Pondok Pesantren Permata Ihsan",
+    desc: "Foto bersama dengan pihak Pondok Pesantren Permata Ihsan",
   },
   {
     imgUrl: "./img-dokumentasi/Annihayah/1.webp",
     name: "Pondok Pesantren Annihayah",
-    testimony: "Foto bersama dengan pihak Pondok Pesantren Annihayah",
+    desc: "Foto bersama dengan pihak Pondok Pesantren Annihayah",
   },
   {
     imgUrl: "./img-dokumentasi/Raudhatut_Tauhid/1.webp",
     name: "Pondok Pesantren Raudhatut Tauhid",
-    testimony: "Foto bersama dengan pihak Pondok Pesantren Raudhatut Tauhid",
+    desc: "Foto bersama dengan pihak Pondok Pesantren Raudhatut Tauhid",
+  },
+];
+
+export const testimonials = [
+  {
+    title: "Administrasi Sekolah Jadi Lebih Cepat dan Rapi",
+    desc: "Sebelum pakai ZIAD, kami masih mengelola data siswa dan keuangan secara manual. Sekarang, semua lebih terorganisir, dan kami bisa fokus ke pengembangan sekolah. Sangat membantu!",
+  },
+  {
+    title: "Aplikasi yang Memudahkan Guru dan Staf TU",
+    desc: "ZIAD sangat praktis digunakan, terutama dalam input data siswa, rekap nilai, dan pencatatan keuangan. Tidak perlu lagi bolak-balik catatan fisik, semuanya tinggal klik!",
+  },
+  {
+    title: "Solusi Digital yang Dibutuhkan Sekolah Saat Ini",
+    desc: "Dengan ZIAD, kami merasa administrasi sekolah masuk ke level yang lebih modern. Selain mudah digunakan, tampilannya juga ramah pengguna dan support-nya cepat merespon.",
+  },
+  {
+    title: "Laporan Bulanan Kini Otomatis dan Akurat",
+    desc: "Dulu kami menghabiskan waktu berjam-jam untuk menyusun laporan bulanan sekolah. Setelah menggunakan ZIAD, semua laporan keuangan, data siswa, dan presensi bisa langsung diakses dan dicetak dengan mudah. Efisiensi waktu jadi jauh lebih baik!",
   },
 ];
 
