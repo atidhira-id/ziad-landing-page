@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/img-redundant-alt */
-/* eslint-disable @next/next/no-img-element */
 import React from "react";
 
 function DownloadLink({ platforms }) {
@@ -11,7 +9,7 @@ function DownloadLink({ platforms }) {
       >
         <img
           src={
-            platforms === "playstore"
+            platforms === "appstore"
               ? "./download-apple.jpg"
               : "./download-google.jpg"
           }
