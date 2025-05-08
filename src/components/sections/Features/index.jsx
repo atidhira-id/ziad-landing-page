@@ -1,18 +1,15 @@
-/* eslint-disable @next/next/no-img-element */
-/* eslint-disable jsx-a11y/img-redundant-alt */
-/* eslint-disable import/extensions */
-/* eslint-disable max-len */
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Scrollbar } from "swiper";
 import { features } from "@/data/data";
-import { SectionTitle } from "../Typography";
-import FeatureSlideWrapper from "../FeatureSlideSwapper";
-import CardFeatures from "../CardFeatures";
-import CardOtherFeatures from "../CardOtherFeatures";
+import { SectionTitle } from "@/components/Typography";
+import FeatureSlideWrapper from "@/components/sections/Features/FeatureSlideWrapper";
+import CardFeatures from "@/components/sections/Features/CardFeature";
+import CardOtherFeatures from "@/components/sections/Features/CardOtherFeature";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { SectionContainer } from "@/components/Containers";
 
 function Features() {
   const featureList = [
@@ -35,10 +32,7 @@ function Features() {
 
   return (
     <>
-      <section
-        className="relative w-full max-w-7xl mx-auto pt-20 z-0"
-        id="features"
-      >
+      <SectionContainer className="relative pt-40 z-0" id="features">
         <SectionTitle className="mb-8 md:mb-12">Fitur Unggulan</SectionTitle>
 
         <section className="w-full">
@@ -56,6 +50,7 @@ function Features() {
               );
             })}
           </div>
+
           {/* Mobile */}
           <div className="flex md:hidden w-full h-max flex-col md:flex-row items-center justify-center gap-8 mb-20">
             <Swiper
@@ -81,9 +76,10 @@ function Features() {
             </Swiper>
           </div>
         </section>
-      </section>
-      <section className="w-5/6 max-w-7xl mx-auto py-4 flex flex-col justify-center items-center rounded-2xl bg-gray-50">
-        <div className="w-full flex flex-col lg:flex-row items-center justify-center p-4">
+      </SectionContainer>
+
+      <SectionContainer className="bg-gray-50">
+        <div className="w-full flex flex-col lg:flex-row items-center justify-center p-8">
           <div className="lg:basis-1/2">
             <img
               src="./dashboard-image.png"
@@ -102,7 +98,7 @@ function Features() {
             />
           </div>
         </div>
-      </section>
+      </SectionContainer>
     </>
   );
 }

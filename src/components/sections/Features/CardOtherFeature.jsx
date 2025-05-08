@@ -1,6 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
-/* eslint-disable jsx-a11y/img-redundant-alt */
-import { CheckIcon } from "./Icons";
+import { CheckIcon } from "@/components/Icons";
 
 function CardOtherFeatures({ row1, row2 }) {
   return (
