@@ -1,12 +1,11 @@
-/* eslint-disable react/jsx-one-expression-per-line */
-/* eslint-disable max-len */
 import React from "react";
-import ProductShowcase from "../ProductShowcase";
-import { SectionTitle } from "../Typography";
+import ProductShowcase from "@/components/sections/Products/ProductShowcase";
+import { SectionTitle } from "@/components/Typography";
+import { SectionContainer } from "@/components/Containers";
 
 function Products() {
   return (
-    <section className="w-full max-w-7xl mx-auto pt-20 z-0" id="product">
+    <SectionContainer className="pt-40 z-0" id="product">
       <SectionTitle className="mb-8 md:mb-12">Teknologi Unggulan</SectionTitle>
       <section className="w-full flex flex-col justify-center items-center gap-8">
         <ProductShowcase
@@ -16,7 +15,6 @@ function Products() {
             </>
           }
           imgUrl="./phone-image.png"
-          align="left"
         >
           Aplikasi android dan IOS khusus untuk setiap sekolah agar memudahkan
           komunikasi dan berbagi data terkini kepada wali murid sesuai
@@ -29,7 +27,7 @@ function Products() {
             </>
           }
           imgUrl="./dashboard-image.png"
-          imgSize="500"
+          reverse
         >
           Aplikasi website yang mudah diakses untuk membantu setiap kegiatan dan
           administrasi guru atau karyawan.
@@ -53,12 +51,13 @@ function Products() {
             </>
           }
           imgUrl="./smart-reader-image.png"
+          reverse
         >
           Alat SmartReader dapat membantu proses administratif maupun transaksi
           siswa dan guru menjadi lebih mudah hanya dengan sekali tap saja.
         </ProductShowcase>
       </section>
-    </section>
+    </SectionContainer>
   );
 }
 
