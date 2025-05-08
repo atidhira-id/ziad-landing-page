@@ -1,7 +1,6 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import React from "react";
-import Button from "./Button";
-import { CheckIcon } from "./Icons";
+import { Button } from "@/components/Button";
+import { CheckIcon } from "@/components/Icons";
 
 function CardPricing({ type, shortDesc, desc, price, name, discount }) {
   if (type === "primary") {
@@ -34,10 +33,7 @@ function CardPricing({ type, shortDesc, desc, price, name, discount }) {
         </ul>
 
         <a href="http://wa.me/6287776669010" target="_blank" className="w-full">
-          <Button
-            variant="fill"
-            className="w-full bg-white hover:bg-blue-50 !text-blue-700 font-bold uppercase"
-          >
+          <Button theme="white" className="w-full">
             Langganan
           </Button>
         </a>
@@ -81,10 +77,7 @@ function CardPricing({ type, shortDesc, desc, price, name, discount }) {
           ))}
       </ul>
       <a href="http://wa.me/6287776669010" target="_blank" className="w-full">
-        <Button
-          variant="fill"
-          className="w-full bg-blue-600 hover:bg-blue-700 !text-white font-bold uppercase"
-        >
+        <Button theme="blue" className="w-full">
           Langganan
         </Button>
       </a>
