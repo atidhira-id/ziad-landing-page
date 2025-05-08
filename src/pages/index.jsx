@@ -1,30 +1,34 @@
 /* eslint-disable import/extensions */
-import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import Jumbotron from "@/components/sections/Jumbotron";
+import Home from "@/components/sections/Home";
+import About from "@/components/sections/About";
 import Clients from "@/components/sections/Clients";
-import AboutUsQuotes from "@/components/sections/AboutUsQuotes";
+import Testimonials from "@/components/sections/Testimonials";
 import Features from "@/components/sections/Features";
 import Products from "@/components/sections/Products";
-import DownloadDemo from "@/components/sections/DownloadDemo";
 import Pricing from "@/components/sections/Pricing";
-import FloatingContactButton from "@/components/FloatingContactButton";
+import Download from "@/components/sections/Download";
+import Documentation from "@/components/sections/Documentation";
+import VideoProfile from "@/components/sections/VideoProfile";
 import Contact from "@/components/sections/Contact";
-import Testimonials from "@/components/sections/Testimonials";
+import Footer from "@/components/sections/Footer";
+import FloatingContactButton from "@/components/FloatingContactButton";
 
-export default function Home() {
+export default function App() {
   return (
     <main id="luxy" className="overflow-x-hidden max-w-screen bg-gray-50">
       <div className="bg-white w-full max-w-screen-2xl mx-auto border-x border-gray-200">
         <Navbar />
-        <Jumbotron />
+        <Home />
+        <About />
         <Clients />
-        <AboutUsQuotes />
+        <Testimonials />
         <Features />
         <Products />
         <Pricing />
-        <DownloadDemo />
-        <Testimonials />
+        <Download />
+        <Documentation />
+        <VideoProfile />
         <Contact />
         <Footer />
         <FloatingContactButton />
