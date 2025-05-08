@@ -1,11 +1,9 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable react/react-in-jsx-scope */
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { CloseIcon, HamburgerIcon, ArrowRightIcon } from "./Icons";
 import { IoLogoYoutube, IoLogoInstagram } from "react-icons/io";
 import { AiFillTikTok } from "react-icons/ai";
-import Button from "./Button";
+import { Button } from "@/components/Button";
 
 function Navbar() {
   const [isPhoneMenuOpen, setIsPhoneMenuOpen] = useState(false);
@@ -102,7 +100,7 @@ function Navbar() {
               <div className="flex flex-col w-full gap-12">
                 <div className="flex justify-between items-center gap-1">
                   <a href="#demo" className="block" onClick={togglePhoneMenu}>
-                    <Button variant="fill" color="white">
+                    <Button theme="white" className="px-4">
                       <p className="text-xs uppercase font-semibold">
                         Coba Aplikasi
                       </p>
