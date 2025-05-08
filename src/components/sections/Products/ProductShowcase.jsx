@@ -1,50 +1,29 @@
-/* eslint-disable @next/next/no-img-element */
-/* eslint-disable import/no-extraneous-dependencies */
-/* eslint-disable no-unused-vars */
-/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
-import { Title } from "./Typography";
+import { SectionSubTitle, SectionTitle } from "@/components/Typography";
 
-function ProductShowcase({ children: desc, title, imgUrl, align, imgSize }) {
-  if (align === "left") {
-    return (
-      <section className="w-5/6 p-4 flex flex-col md:flex-row justify-between items-center gap-4 border border-gray-200 rounded-3xl">
-        {/* product image */}
-        <div>
-          <img src={imgUrl} alt="product-image" className="w-56 md:w-72" />
-        </div>
-        {/* product desc */}
-        <article className="w-full md:w-3/5">
-          {/* title */}
-          <div className="mb-4">
-            <Title size="text-lg md:text-2xl" align="text-center md:text-left">
-              {title}
-            </Title>
-          </div>
-          {/* short desc */}
-          <p className="text-center md:text-left text-gray-600">{desc}</p>
-        </article>
-      </section>
-    );
-  }
-
+function ProductShowcase({ children: desc, title, imgUrl, reverse = false }) {
   return (
-    <section className="w-5/6 px-8 py-16 flex flex-col md:flex-row justify-between items-center gap-4 border border-gray-200 rounded-3xl">
-      {/* product desc */}
-      <article className="w-full md:w-1/2">
-        {/* title */}
-        <div className="mb-4">
-          <Title size="text-lg md:text-2xl" align="text-center md:text-left">
-            {title}
-          </Title>
-        </div>
-        {/* short desc */}
-        <p className="text-center md:text-left text-gray-600">{desc}</p>
-      </article>
-      {/* product image */}
-      <div>
-        <img src={imgUrl} alt="product-image" className="w-56 md:w-72" />
+    <section
+      className={`w-full p-8 flex flex-col ${
+        reverse ? "lg:flex-row-reverse" : "lg:flex-row"
+      }  justify-between items-center gap-4 border border-gray-200 rounded-xl r`}
+    >
+      <div className="lg:basis-2/5">
+        <img
+          src={imgUrl}
+          alt="product-image"
+          className="w-full h-60 lg:h-96 object-contain"
+        />
       </div>
+
+      <article className="grow max-w-2xl">
+        <SectionTitle className="!text-3xl font-bold text-center lg:text-left mb-4 px-0">
+          {title}
+        </SectionTitle>
+        <SectionSubTitle className="text-center lg:text-left">
+          {desc}
+        </SectionSubTitle>
+      </article>
     </section>
   );
 }
