@@ -20,7 +20,7 @@ function Documentation() {
       {/* Header */}
       <div className="mb-10">
         <SectionTitle className="mb-8 md:mb-12">
-          Gallery kegiatan bersama Pesantren
+          Foto kegiatan bersama Pesantren
         </SectionTitle>
         <SectionSubTitle className="text-center">
           Dokumentasi perjalanan tim dalam membawa revolusi manajemen sekolah
