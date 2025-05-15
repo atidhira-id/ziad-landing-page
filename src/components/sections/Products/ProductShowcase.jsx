@@ -17,7 +17,7 @@ function ProductShowcase({ children: desc, title, imgUrl, reverse = false }) {
       </div>
 
       <article className="grow max-w-2xl">
-        <SectionTitle className="!text-3xl font-bold text-center lg:text-left mb-4 px-0">
+        <SectionTitle className="!text-3xl font-bold text-center lg:text-left mb-4 !px-0">
           {title}
         </SectionTitle>
         <SectionSubTitle className="text-center lg:text-left">
