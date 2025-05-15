@@ -81,12 +81,7 @@ function Features() {
       <SectionContainer className="bg-gray-50">
         <div className="w-full flex flex-col lg:flex-row items-center justify-center p-8">
           <div className="lg:basis-1/2">
-            <img
-              src="./dashboard-image.png"
-              alt="phone-image-apps"
-              height={600}
-              width={600}
-            />
+            <img src="./images/dashboard-image.png" alt="phone-image-apps" />
           </div>
           <div className="w-full lg:w-1/2">
             <SectionTitle className="mt-8 mb-8 lg:mt-0">

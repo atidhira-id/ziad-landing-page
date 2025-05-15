@@ -10,8 +10,8 @@ function DownloadLink({ platforms }) {
         <img
           src={
             platforms === "appstore"
-              ? "./download-apple.jpg"
-              : "./download-google.jpg"
+              ? "./images/download-apple.jpg"
+              : "./images/download-google.jpg"
           }
           alt="download-ziad-link-image-button"
           height="auto"

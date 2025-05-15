@@ -10,7 +10,7 @@ function About() {
           Designed by vectorjuice / Freepik
         </a>
         <img
-          src="./islamic-school-vector.jpg"
+          src="./images/islamic-school-vector.jpg"
           alt="islamic-school-pesantren-pesantren-modern"
           className="mix-blend-multiply"
         />

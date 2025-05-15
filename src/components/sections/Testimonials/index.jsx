@@ -16,7 +16,7 @@ function Testimonials() {
       <div className="w-full lg:w-1/2 lg:flex flex-col">
         <SectionTitle className="mb-6">Apa Kata Mereka?</SectionTitle>
         <img
-          src="./testimony-ilustration.png"
+          src="./images/testimony-ilustration.png"
           alt="testimony"
           className="hidden lg:block h-72 object-contain"
         />

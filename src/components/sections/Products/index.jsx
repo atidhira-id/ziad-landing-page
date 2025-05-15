@@ -14,7 +14,7 @@ function Products() {
               <span className="text-brand">Mobile </span> Application
             </>
           }
-          imgUrl="./phone-image.png"
+          imgUrl="./images/phone-image.png"
         >
           Aplikasi android dan IOS khusus untuk setiap sekolah agar memudahkan
           komunikasi dan berbagi data terkini kepada wali murid sesuai
@@ -26,7 +26,7 @@ function Products() {
               <span className="text-brand">Dashboard </span> Admin
             </>
           }
-          imgUrl="./dashboard-image.png"
+          imgUrl="./images/dashboard-image.png"
           reverse
         >
           Aplikasi website yang mudah diakses untuk membantu setiap kegiatan dan
@@ -38,7 +38,7 @@ function Products() {
               <span className="text-brand">Smart Card</span> Cashless
             </span>
           }
-          imgUrl="./card-mockup.png"
+          imgUrl="./images/card-mockup.png"
           align="left"
         >
           Alat SmartCard ini dapat membantu santri dalam melakukan transaksi
@@ -50,7 +50,7 @@ function Products() {
               <span className="text-brand">Smart Reader </span> IoT
             </>
           }
-          imgUrl="./smart-reader-image.png"
+          imgUrl="./images/smart-reader-image.png"
           reverse
         >
           Alat SmartReader dapat membantu proses administratif maupun transaksi

@@ -67,7 +67,7 @@ function Home() {
             </SectionSubTitle>
             <div className="w-3/4 mx-auto flex flex-col sm:flex-row sm:justify-center sm:my-12 gap-4 lg:gap-6">
               <a
-                href="./brosur-ziad.pdf"
+                href="./db/brosur-ziad.pdf"
                 download
                 className="w-full max-w-xs mx-auto sm:mx-0 z-0"
               >
@@ -109,15 +109,15 @@ function Home() {
           <div className="w-full max-w-md md:max-w-lg lg:max-w-3xl m-auto relative flex justify-center items-center">
             <PhoneMockup
               className="w-40 md:w-48 lg:w-72 absolute top-6 left-0"
-              imageUrl="./jumbotron-phone-mockup1.png"
+              imageUrl="./images/jumbotron-phone-mockup1.png"
             />
             <PhoneMockup
               className="w-48 md:w-56 lg:w-80 z-10"
-              imageUrl="./phone-mockup.png"
+              imageUrl="./images/phone-mockup.png"
             />
             <PhoneMockup
               className="w-40 md:w-48 lg:w-72 absolute top-6 right-0"
-              imageUrl="./jumbotron-phone-mockup2.png"
+              imageUrl="./images/jumbotron-phone-mockup2.png"
             />
           </div>
         </motion.section>

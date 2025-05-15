@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer className="w-full max-w-screen-2xl mt-20 border-t border-dashed border-gray-200">
       <div className="w-full max-w-screen-xl mx-auto p-8 md:py-20 flex flex-col md:flex-row justify-start items-center md:gap-8">
-        <img src="./logo-ziad.png" alt="company logo" className="w-20" />
+        <img src="./images/logo-ziad.png" alt="company logo" className="w-20" />
 
         <aside className=" w-full mt-8 md:mt-0 flex flex-col md:flex-row justify-center md:justify-between gap-4 text-gray-600">
           <div className="w-max">

@@ -24,11 +24,12 @@ function Navbar() {
       {/* Desktop Navigation */}
       <div className="hidden bg-white w-full max-w-screen-2xl md:flex md:fixed border-b border-gray-300 border-dashed z-40 box-content">
         <nav className="bg-white w-full h-16 max-w-screen-xl mx-auto px-6 md:flex items-center justify-between">
-          {/* logo */}
           <a href="#home" className="block">
-            <img src="./logo-ziad.png" className="w-12 h-12 object-contain" />
+            <img
+              src="./images/logo-ziad.png"
+              className="w-12 h-12 object-contain"
+            />
           </a>
-          {/* navbar links */}
           <div className="grow flex flex-row items-center justify-center gap-4">
             {links.map((link, key) => {
               return (
@@ -53,7 +54,10 @@ function Navbar() {
       {/* Mobile Navigation */}
       <nav className="md:hidden bg-white fixed top-0 w-full flex justify-between items-center py-4 px-10 border-b border-dashed z-40">
         <a href="#home" className="md:block">
-          <img src="./logo-ziad.png" className="w-12 h-12 object-contain" />
+          <img
+            src="./images/logo-ziad.png"
+            className="w-12 h-12 object-contain"
+          />
         </a>
         <button
           type="button"

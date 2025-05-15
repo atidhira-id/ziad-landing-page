@@ -28,7 +28,7 @@ function DownloadDemo() {
 
       <div className="hidden lg:flex grow justify-center">
         <img
-          src="./demo-app-phone-mockup.png"
+          src="./images/demo-app-phone-mockup.png"
           alt="phone-image-apps"
           className="w-[200px] md:w-[300px]"
         />
