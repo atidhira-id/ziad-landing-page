@@ -140,6 +140,58 @@ export const features = [
   },
 ];
 
+export const pricing = [
+  {
+    name: "Bulanan",
+    type: "primary",
+    price: "0",
+    shordDesc: "Khusus untuk anak Yatim dan Duafa",
+    desc: [
+      "Dapat semua fitur",
+      "Bebas biaya registrasi",
+      "Bebas biaya pemasangan",
+      "Gratis penyesuaian kebutuhan",
+      "Gratis fitur Baru",
+      "Harga dapat didiskusikan",
+    ],
+  },
+  {
+    name: "Bulanan",
+    price: "15",
+    shordDesc: "Per Siswa Aktif",
+    desc: [
+      "Dapat semua fitur",
+      "Bebas biaya registrasi",
+      "Bebas biaya pemasangan",
+      "Gratis penyesuaian kebutuhan",
+      "Gratis fitur Baru",
+      "Harga khusus hubungi team Marketing",
+    ],
+  },
+  {
+    name: "Smart Reader",
+    price: "400",
+    shordDesc: "Per Unit",
+    desc: [
+      "Bayar Sekali",
+      "Garansi Selamanya",
+      "Satu alat bisa banyak fungsi",
+      "Tidak ada minimal pembelian",
+    ],
+  },
+  {
+    name: "Smart Card",
+    price: "15",
+    shordDesc: "Per Unit",
+    desc: [
+      "Bayar Sekali",
+      "Full print dua sisi",
+      "Design bebas",
+      "Kartu multifungsi",
+    ],
+  },
+];
+
 export const documentations = [
   {
     imgUrl: "./img-dokumentasi/Ibadurrahman_Cileungsi/2.webp",
@@ -170,20 +222,28 @@ export const documentations = [
 
 export const testimonials = [
   {
-    title: "Administrasi Sekolah Jadi Lebih Cepat dan Rapi",
+    title: "Sejak Pakai ZIAD, Administrasi Pesantren Jadi Mudah!",
     desc: "Sebelum pakai ZIAD, kami masih mengelola data siswa dan keuangan secara manual. Sekarang, semua lebih terorganisir, dan kami bisa fokus ke pengembangan sekolah. Sangat membantu!",
+    name: "Template Nama",
+    position: "Kepala Sekolah",
   },
   {
     title: "Aplikasi yang Memudahkan Guru dan Staf TU",
     desc: "ZIAD sangat praktis digunakan, terutama dalam input data siswa, rekap nilai, dan pencatatan keuangan. Tidak perlu lagi bolak-balik catatan fisik, semuanya tinggal klik!",
+    name: "Template Nama",
+    position: "Kepala Sekolah",
   },
   {
     title: "Solusi Digital yang Dibutuhkan Sekolah Saat Ini",
     desc: "Dengan ZIAD, kami merasa administrasi sekolah masuk ke level yang lebih modern. Selain mudah digunakan, tampilannya juga ramah pengguna dan support-nya cepat merespon.",
+    name: "Template Nama",
+    position: "Kepala Sekolah",
   },
   {
     title: "Laporan Bulanan Kini Otomatis dan Akurat",
     desc: "Dulu kami menghabiskan waktu berjam-jam untuk menyusun laporan bulanan sekolah. Setelah menggunakan ZIAD, semua laporan keuangan, data siswa, dan presensi bisa langsung diakses dan dicetak dengan mudah. Efisiensi waktu jadi jauh lebih baik!",
+    name: "Template Nama",
+    position: "Kepala Sekolah",
   },
 ];
 
