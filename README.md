@@ -1,38 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ZIAD - Landing Page
 
-## Getting Started
+Welcome to the **ZIAD Landing Page** repository! This project is a promotional and informational website for **ZIAD**, a mobile app designed to streamline school management, including student data, payments, e-learning, and parent communication.
 
-First, run the development server:
+## 🔍 About ZIAD
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+**ZIAD** is a mobile application created to improve the communication and administrative workflows of schools. It helps educational institutions manage:
+
+- 📚 Student data
+- 💳 Payments and transactions
+- 🧑‍🏫 E-learning modules
+- 👨‍👩‍👧‍👦 Communication with parents
+
+This landing page serves to introduce the app, highlight its features, display client testimonials, and offer easy contact or download links.
+
+## 🚀 Tech Stack
+
+- **Frontend**: [Next.js](https://nextjs.org/)
+- **CMS**: [Notion](https://www.notion.so/) (used to manage content for the landing page)
+
+## 🧪 Environment Variables
+
+This project uses several environment variables stored in an `.env.local` file:
+
+```env
+NOTION_TOKEN=your_notion_integration_token
+DATABASE_ID_TESTIMONIALS=your_testimonials_database_id
+DATABASE_ID_CLIENTS=your_clients_database_id
+DATABASE_ID_DOCUMENTATIONS=your_documentations_database_id
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🗂️ Notion Database Structure
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+The following Notion databases are used in this project:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### 1. Testimonials Database
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- `Name` (Title): Name of the person giving the testimonial
+- `Position` (Text): Position of the person giving the testimonial
+- `Title` (Text): The Title of the testimonial
+- `Description` (Text): Content of the testimonial
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### 2. Clients Database
 
-## Learn More
+- `Name` (Title): Name of the client or institution
+- `Logo` (Files & Media): Client logo image
 
-To learn more about Next.js, take a look at the following resources:
+### 3. Documentations Database
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `Pesantren` (Title): Title of the documentation
+- `Description` (Text): Content of the documentation
+- `Image` (Files & Media): Image of the documentation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+> ⚠️ Make sure your Notion integration has access to these databases, and the database schema matches the fields listed above.
