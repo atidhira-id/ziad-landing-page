@@ -3,14 +3,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Scrollbar } from "swiper";
 import { SectionContainer } from "@/components/Containers";
 import { SectionTitle } from "@/components/Typography";
-import { testimonials } from "@/data/data";
 import { FaRegUser } from "react-icons/fa";
 
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-function Testimonials() {
+function Testimonials({ data }) {
   return (
     <SectionContainer className="mt-20 flex flex-col lg:flex-row items-center gap-4 lg:px-4">
       <div className="w-full lg:w-1/2 lg:flex flex-col">
@@ -31,7 +30,7 @@ function Testimonials() {
           pagination={{ clickable: true }}
           className="w-full flex justify-center items-center"
         >
-          {testimonials.map((testimony, key) => (
+          {data.map((testimony, key) => (
             <SwiperSlide key={key} className="py-8">
               <figure className="w-full h-full flex flex-col justify-center items-center text-center p-3 bg-gray-50 md:p-12 border border-gray-200 rounded-xl">
                 <blockquote className="mx-auto mb-8 max-w-2xl text-gray-500">

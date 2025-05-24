@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Scrollbar, EffectCoverflow } from "swiper";
-import { documentations } from "@/data/data";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
@@ -12,7 +11,7 @@ import {
   DocumentationDesktopCard,
 } from "@/components/sections/Documentation/DocumentationCard";
 
-function Documentation() {
+function Documentation({ data }) {
   const [slidePos, setSlidePos] = useState(0);
 
   return (
@@ -38,7 +37,7 @@ function Documentation() {
           pagination={{ clickable: true }}
           className="w-full flex justify-center items-center"
         >
-          {documentations.map((documentation, key) => {
+          {data.map((documentation, key) => {
             return (
               <SwiperSlide key={key}>
                 <DocumentationMobileCard data={documentation} />
@@ -70,7 +69,7 @@ function Documentation() {
             setSlidePos(swiper.activeIndex);
           }}
         >
-          {documentations.map((documentation, key) => {
+          {data.map((documentation, key) => {
             return (
               <SwiperSlide
                 key={key}
@@ -84,10 +83,10 @@ function Documentation() {
           })}
         </Swiper>
         <SectionTitle className="text-gray-900 !text-xl font-bold mb-4">
-          {documentations[slidePos].name}
+          {data[slidePos].name}
         </SectionTitle>
         <SectionSubTitle className="text-justify">
-          {documentations[slidePos].desc}
+          {data[slidePos].desc}
         </SectionSubTitle>
       </div>
     </SectionContainer>
