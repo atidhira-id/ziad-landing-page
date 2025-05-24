@@ -1,36 +1,23 @@
-/* eslint-disable import/no-extraneous-dependencies */
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
 
-function Title({ children: title = 'xl', size: className, align = 'text-center' }) {
+function SectionTitle({ children: title, className }) {
   return (
     <h1
-      className={`${className} ${align} font-poppins font-bold text-gray-800 text-left`}
+      className={`text-4xl md:text-5xl tracking-tight font-extrabold text-gray-900 text-center px-4 ${className}`}
     >
       {title}
     </h1>
   );
 }
 
-function SectionTitle({ children: title, align = 'center' }) {
+function SectionSubTitle({ children: text, className }) {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: -50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.5 }}
-      viewport={{ once: false, margin: '-50px' }}
-      className="my-12 w-full"
+    <p
+      className={`font-light text-gray-500 sm:text-xl max-w-2xl mx-auto ${className}`}
     >
-      <h1
-        className="text-3xl md:text-5xl font-extrabold text-brand-title"
-        style={{
-          textAlign: align,
-        }}
-      >
-        {title}
-      </h1>
-    </motion.div>
+      {text}
+    </p>
   );
 }
 
-export { Title, SectionTitle };
+export { SectionTitle, SectionSubTitle };
