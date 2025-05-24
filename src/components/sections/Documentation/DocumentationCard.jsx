@@ -1,11 +1,12 @@
 import React from "react";
 
 function DocumentationMobileCard({ data }) {
-  const { imgUrl, name, desc } = data;
+  const { image, name, desc } = data;
+
   return (
     <div className="w-full flex flex-col bg-white rounded-xl border border-blue-200 overflow-hidden">
       <img
-        src={imgUrl}
+        src={image}
         alt="Tim Ziad di sekolah"
         className="w-full h-80 object-cover object-top"
       />
@@ -18,11 +19,11 @@ function DocumentationMobileCard({ data }) {
 }
 
 function DocumentationDesktopCard({ data }) {
-  const { imgUrl } = data;
+  const { image } = data;
 
   return (
     <img
-      src={imgUrl}
+      src={image}
       alt="Tim Ziad di sekolah"
       className="block w-full object-cover object-top"
     />
