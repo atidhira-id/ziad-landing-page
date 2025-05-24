@@ -9,6 +9,7 @@
     "lint": "next lint --fix"
   },
   "dependencies": {
+    "@notionhq/client": "^3.0.1",
     "eslint-config-next": "^14.2.3",
     "framer-motion": "^10.6.1",
     "luxy.js": "^0.1.0",
