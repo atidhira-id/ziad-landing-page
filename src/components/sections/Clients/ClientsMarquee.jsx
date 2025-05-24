@@ -1,15 +1,14 @@
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
-import { clients } from "@/data/data";
 
-function LogoWrapper({ controls }) {
+function LogoWrapper({ controls, data }) {
   return (
     <motion.div
       initial={{ x: 0 }}
       animate={controls}
       className="w-max flex flex-shrink-0"
     >
-      {clients.map((client, key) => (
+      {data.map((client, key) => (
         <div key={key} className="relative group mx-1">
           <img src={client.logo} className="h-10 md:h-16" />
 
@@ -23,7 +22,7 @@ function LogoWrapper({ controls }) {
   );
 }
 
-function ClientsMarquee() {
+function ClientsMarquee({ data }) {
   const controls = useAnimation();
 
   const duration = 30;
@@ -55,8 +54,8 @@ function ClientsMarquee() {
       onHoverStart={handleMouseEnter}
       onHoverEnd={handleMouseLeave}
     >
-      <LogoWrapper controls={controls} />
-      <LogoWrapper controls={controls} />
+      <LogoWrapper controls={controls} data={data} />
+      <LogoWrapper controls={controls} data={data} />
     </motion.div>
   );
 }
