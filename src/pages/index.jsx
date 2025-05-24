@@ -13,21 +13,35 @@ import VideoProfile from "@/components/sections/VideoProfile";
 import Contact from "@/components/sections/Contact";
 import Footer from "@/components/sections/Footer";
 import FloatingContactButton from "@/components/FloatingContactButton";
+import {
+  getAllTestimony,
+  getAllClients,
+  getAllDocumentations,
+} from "../../lib/notion";
+import { clients, testimonials, documentations } from "@/data/data";
 
-export default function App() {
+export default function App({
+  testimonialsData,
+  clientsData,
+  documentationsData,
+}) {
   return (
     <main id="luxy" className="overflow-x-hidden max-w-screen bg-gray-50">
       <div className="bg-white w-full max-w-screen-2xl mx-auto border-x border-gray-200">
         <Navbar />
         <Home />
         <About />
-        <Clients />
-        <Testimonials />
+        <Clients data={clientsData ? clientsData : clients} />
+        <Testimonials
+          data={testimonialsData ? testimonialsData : testimonials}
+        />
         <Features />
         <Products />
         <Pricing />
         <Download />
-        <Documentation />
+        <Documentation
+          data={documentationsData ? documentationsData : documentations}
+        />
         <VideoProfile />
         <Contact />
         <Footer />
@@ -37,8 +51,17 @@ export default function App() {
   );
 }
 
-export async function getStaticProps() {
+export const getStaticProps = async () => {
+  const testimonialsData = await getAllTestimony();
+  const clientsData = await getAllClients();
+  const documentationsData = await getAllDocumentations();
+
   return {
-    props: {},
+    props: {
+      testimonialsData: testimonialsData,
+      clientsData: clientsData,
+      documentationsData: documentationsData,
+    },
+    revalidate: 60,
   };
-}
+};
