@@ -88,10 +88,6 @@ export const clients = [
     logo: "./images/img-logo-pesantren/logo-fajrul-karim.webp",
   },
   {
-    name: "Imumahabbah",
-    logo: "./images/img-logo-pesantren/logo-imumahabbah.webp",
-  },
-  {
     name: "Kebun Tumbuh",
     logo: "./images/img-logo-pesantren/logo-kebun-tumbuh.webp",
   },
@@ -194,27 +190,27 @@ export const pricing = [
 
 export const documentations = [
   {
-    imgUrl: "./images/img-dokumentasi/Ibadurrahman_Cileungsi/2.webp",
+    image: "./images/img-dokumentasi/Ibadurrahman_Cileungsi/2.webp",
     name: "Pondok Pesantren Ibadurrahman Cileungsi",
     desc: "Tim Ziad memperkenalkan fitur-fitur aplikasi kepada santri dan santriwati di Pesantren Ibadurrahman Cileungsi. Demo interaktif ini menunjukkan cara mudah memanajemen siswa, pembayaran digital, e-learning, hingga komunikasi wali murid — semuanya dalam satu tempat.",
   },
   {
-    imgUrl: "./images/img-dokumentasi/Ibadurrahman_Cileungsi/6.webp",
+    image: "./images/img-dokumentasi/Ibadurrahman_Cileungsi/6.webp",
     name: "Pondok Pesantren Ibadurrahman Cileungsi",
     desc: "Tim Ziad mendemonstrasikan penggunaan Smart Reader IoT untuk membaca barcode pada sebuah produk. Kegiatan ini bertujuan untuk memperkenalkan teknologi IoT yang dapat membantu proses identifikasi produk secara otomatis dan efisien.",
   },
   {
-    imgUrl: "./images/img-dokumentasi/Permata_Ihsan/1.webp",
+    image: "./images/img-dokumentasi/Permata_Ihsan/1.webp",
     name: "Pondok Pesantren Permata Ihsan",
     desc: "Foto bersama dengan pihak Pondok Pesantren Permata Ihsan",
   },
   {
-    imgUrl: "./images/img-dokumentasi/Annihayah/1.webp",
+    image: "./images/img-dokumentasi/Annihayah/1.webp",
     name: "Pondok Pesantren Annihayah",
     desc: "Foto bersama dengan pihak Pondok Pesantren Annihayah",
   },
   {
-    imgUrl: "./images/img-dokumentasi/Raudhatut_Tauhid/1.webp",
+    image: "./images/img-dokumentasi/Raudhatut_Tauhid/1.webp",
     name: "Pondok Pesantren Raudhatut Tauhid",
     desc: "Foto bersama dengan pihak Pondok Pesantren Raudhatut Tauhid",
   },
